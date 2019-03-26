@@ -5,6 +5,7 @@ from Tools import GetFileMD5
 from Tools import GetStrMD5
 from Tools import GetUnixTimeStamp
 from Tools import GetUnixTimeStamp_ms
+from Tools import MultiSizeIcon
 
 
 toolSets=\
@@ -23,6 +24,9 @@ toolSets=\
 
     # 获取 13位 Unix时间戳 单位毫秒
     GetUnixTimeStamp_ms:['unix','time','timestamp','ms'],
+
+    # MultiSizeIcon
+    MultiSizeIcon:['icon','icon size'],
 }
 
 toolSets_old=toolSets
