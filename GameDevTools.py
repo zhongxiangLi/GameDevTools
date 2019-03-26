@@ -60,6 +60,9 @@ def searchKeyword(varKeyword):
 def sayHello():
     tmpKeyword=raw_input("Search:")
     searchKeyword(tmpKeyword.rstrip('\r'))
+    print('\n\n')
+        
+    sayHello()
 
 if __name__=="__main__":
      sayHello()
