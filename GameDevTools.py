@@ -6,6 +6,7 @@ from Tools import GetStrMD5
 from Tools import GetUnixTimeStamp
 from Tools import GetUnixTimeStamp_ms
 from Tools import MultiSizeIcon
+from Tools import HttpServer
 
 
 toolSets=\
@@ -27,6 +28,9 @@ toolSets=\
 
     # MultiSizeIcon
     MultiSizeIcon:['icon','icon size'],
+
+    # HttpServer
+    HttpServer:['http','httpserver','http server'],
 }
 
 toolSets_old=toolSets
