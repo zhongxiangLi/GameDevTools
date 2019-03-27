@@ -7,6 +7,7 @@ from Tools import GetUnixTimeStamp
 from Tools import GetUnixTimeStamp_ms
 from Tools import MultiSizeIcon
 from Tools import HttpServer
+from Tools import UnZipTools
 
 
 toolSets=\
@@ -31,6 +32,9 @@ toolSets=\
 
     # HttpServer
     HttpServer:['http','httpserver','http server'],
+
+    # UnZip
+    UnZipTools:['zip','unzip','extra','extract'],
 }
 
 toolSets_old=toolSets
