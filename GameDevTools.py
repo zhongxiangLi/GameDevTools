@@ -9,6 +9,7 @@ from Tools import MultiSizeIcon
 from Tools import HttpServer
 from Tools import CheckServerPortOpen
 from Tools import UnZipTools
+from Tools import UnicodeToChinese
 
 
 toolSets=\
@@ -39,6 +40,9 @@ toolSets=\
 
     # 解压ZIP
     UnZipTools:['zip','unzip','extra','extract'],
+
+    # Unicode 转 普通中文显示 \u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8 人生苦短，py是岸
+    UnicodeToChinese:['unicode','gbk','chinese','\u','url','urlencode','code','codec'],
 }
 
 toolSets_old=toolSets
