@@ -32,7 +32,16 @@ toolSets=\
     # 获取 13位 Unix时间戳 单位毫秒
     GetUnixTimeStamp_ms:['unix','time','timestamp','ms'],
 
-    # MultiSizeIcon
+    # 一键生成Android、IOS 多尺寸Icon
     MultiSizeIcon:['icon','icon size'],
+
+    # 简单http服务器
+    HttpServer:['http','httpserver','http server'],
+
+    # telnet 测试端口是否开启
+    CheckServerPortOpen:['telnet','checkserverportopen','port','network','server','net'],
+
+    # 解压ZIP
+    UnZipTools:['zip','unzip','extra','extract'],
 }
 ```
