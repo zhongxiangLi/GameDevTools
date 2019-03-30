@@ -8,6 +8,7 @@ from Tools import GetUnixTimeStamp_ms
 from Tools import MultiSizeIcon
 from Tools import HttpServer
 from Tools import CheckServerPortOpen
+from Tools import UnZipTools
 
 
 toolSets=\
@@ -35,6 +36,8 @@ toolSets=\
 
     # CheckServerPortOpen
     CheckServerPortOpen:['telnet','checkserverportopen','port','network','server','net'],
+    # UnZip
+    UnZipTools:['zip','unzip','extra','extract'],
 }
 
 toolSets_old=toolSets
