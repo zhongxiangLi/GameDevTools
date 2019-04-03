@@ -45,3 +45,9 @@ toolSets=\
     UnZipTools:['zip','unzip','extra','extract'],
 }
 ```
+
+# 更新日志
+
+```
+2019/4/3 新增屏幕录制gif工具 ILCEcap
+```
