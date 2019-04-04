@@ -49,5 +49,7 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/4 新增文本编辑器 Notepad,关键词 ['txt','exe','edit','note','notepad','text']
+
 2019/4/3 新增屏幕录制gif工具 ILCEcap,关键词 ['gif','screen','capture','rec','url','licecap','cap']
 ```
