@@ -11,7 +11,7 @@ from Tools import CheckServerPortOpen
 from Tools import UnZipTools
 from Tools import UnicodeToChinese
 from Tools import ScreenCaptureGif
-
+from Tools import Notepad
 
 toolSets=\
 {
@@ -47,6 +47,9 @@ toolSets=\
 
     # 屏幕录制Gif
     ScreenCaptureGif:['gif','screen','capture','rec','url','licecap','cap'],
+
+    # Notepad 文本编辑器
+    Notepad:['txt','exe','edit','note','notepad','text'],
 }
 
 toolSets_old=toolSets
