@@ -13,6 +13,8 @@ from Tools import UnicodeToChinese
 from Tools import ScreenCaptureGif
 from Tools import Notepad
 from Tools import PNGoo_Win
+from Tools import lua_5_3_5_Debug
+from Tools import luac_5_3_5_Debug
 
 toolSets=\
 {
@@ -54,6 +56,12 @@ toolSets=\
 
     # PNGoo PNG无损压缩
     PNGoo_Win:[['png','compress','png compress','image','image compress','yasuo'],u'PNG无损压缩'],
+
+    # lua.5.3.5.Debug
+    lua_5_3_5_Debug:[['lua','LUA'],u'lua.5.3.5.Debug'],
+
+    # luac.5.3.5.Debug
+    luac_5_3_5_Debug:[['luac','lua'],u'lua5.3.5编译字节码工具 Debug版本'],
 }
 
 toolSets_old=toolSets

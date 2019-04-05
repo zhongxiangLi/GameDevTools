@@ -61,6 +61,10 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/6 新增luac,关键词 ['luac','lua']
+
+2019/4/6 新增lua,关键词 ['lua','LUA']
+
 2019/4/6 新增PNG无损压缩工具 PNGoo_Win,关键词 ['png','compress','png compress','image','image compress','yasuo']
 
 2019/4/4 新增文本编辑器 Notepad,关键词 ['txt','exe','edit','note','notepad','text']
