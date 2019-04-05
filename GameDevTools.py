@@ -15,6 +15,7 @@ from Tools import Notepad
 from Tools import PNGoo_Win
 from Tools import lua_5_3_5_Debug
 from Tools import luac_5_3_5_Debug
+from Tools import TextureMerger
 
 toolSets=\
 {
@@ -62,6 +63,9 @@ toolSets=\
 
     # luac.5.3.5.Debug
     luac_5_3_5_Debug:[['luac','lua'],u'lua5.3.5编译字节码工具 Debug版本'],
+
+    # TextureMerger
+    TextureMerger:[['png','jpg','texturepacker','texturemerger'],u'打图集工具 提取自Egret'],
 }
 
 toolSets_old=toolSets
@@ -79,18 +83,42 @@ for tmpTool,tmpToolInfo in toolSets_old.items():
 # print(toolSets[GetFileMD5])
 
 def searchKeyword(varKeyword):
-    if toolSets.has_key(varKeyword):
-        tmpTools=toolSets[varKeyword]
-        for tmpIndex in range(len(tmpTools)):
-            tmpOneTool=tmpTools[tmpIndex]
-            print(str(tmpIndex)+":"+tmpOneTool.__name__+" -"+toolSets_old[tmpOneTool][1])
-        tmpIndex=input("Choose:")
+    # 先提取所有Keyword
+    tmpAllKeyword=toolSets.keys()
+    # 然后提取包含 搜索字的 关键词
+    tmpKeyword_ContainsSearch=[]
+    for tmpOneKeyword in tmpAllKeyword:
+        if varKeyword in tmpOneKeyword:
+            tmpKeyword_ContainsSearch.append(tmpOneKeyword)
 
-        print("-------"+tmpTools[tmpIndex].__name__+"-------")
-        tmpTools[tmpIndex].run()
-
-    else:
+    if len(tmpKeyword_ContainsSearch)==0:
         print("not found")
+        return
+
+    # 提取关键字对应的Tool,去重
+    tmpTools_for_Search=[]
+    for tmpOneKeyword in tmpKeyword_ContainsSearch:
+        tmpTools=toolSets[tmpOneKeyword]
+        for tmpTool in tmpTools:
+            if tmpTool not in tmpTools_for_Search:
+                tmpTools_for_Search.append(tmpTool)
+
+    # 输出结果
+    for tmpIndex in range(len(tmpTools_for_Search)):
+        tmpOneTool=tmpTools_for_Search[tmpIndex]
+        print(str(tmpIndex)+":"+tmpOneTool.__name__+" -"+toolSets_old[tmpOneTool][1])
+    tmpIndex=raw_input("Choose:").replace('\r','').replace('\n','').replace(' ','')
+    tmpIndexStr=str(tmpIndex).strip()
+    
+    if tmpIndexStr=="":
+        sayHello()
+    else:
+        try:
+            tmpIndex=int(tmpIndexStr)
+            print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
+            tmpTools_for_Search[tmpIndex].run()
+        except:
+            sayHello()
 
 def sayHello():
     tmpKeyword=raw_input("Search:")

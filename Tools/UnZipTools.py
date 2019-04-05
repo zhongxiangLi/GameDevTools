@@ -11,7 +11,7 @@ def run():
     else:
         tmpZipFilePath=input("ZipFilePath:")
 
-    tmpZipFilePath=tmpZipFilePath.replace('\\','')
+    tmpZipFilePath=tmpZipFilePath.replace('\\','/')
     print(tmpZipFilePath)
     tmpZipFile=zipfile.ZipFile(tmpZipFilePath)
     print(tmpZipFile.namelist())
