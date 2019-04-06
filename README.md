@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/6 https://www.freesoundeffects.com/ 免费音效下载网站,关键词 ['visitfreesoundeffect','mp3','audio','wav','audio']
+
 2019/4/6 新增SimpleDownload 单文件下载器，省的打开迅雷或者浏览器,关键词 ['http download','xunlei','xuanfeng','kuaiche','idm']
 
 2019/4/6 新增GIMP 免费开源的图片编辑工具，替代Photoshop,关键词 ['gimp','png','image editor','jpg','photoshop','texture','ps']

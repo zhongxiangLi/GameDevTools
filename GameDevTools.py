@@ -20,6 +20,7 @@ from Tools import GetGIMP
 from Tools import WinMerge
 from Tools import GetBigJPG
 from Tools import SimpleDownload
+from Tools import VisitFreeSoundEffect
 
 toolSets=\
 {
@@ -82,6 +83,9 @@ toolSets=\
 
     # SimpleDownload
     SimpleDownload:[['http download','xunlei','xuanfeng','kuaiche','idm'],u'单文件下载器，省的打开迅雷或者浏览器'],
+
+    # VisitFreeSoundEffect
+    VisitFreeSoundEffect:[['visitfreesoundeffect','mp3','audio','wav','audio'],u'免费的音效网站'],
 }
 
 toolSets_old=toolSets
