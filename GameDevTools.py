@@ -16,6 +16,8 @@ from Tools import PNGoo_Win
 from Tools import lua_5_3_5_Debug
 from Tools import luac_5_3_5_Debug
 from Tools import TextureMerger
+from Tools import GetGIMP
+from Tools import WinMerge
 
 toolSets=\
 {
@@ -66,6 +68,12 @@ toolSets=\
 
     # TextureMerger
     TextureMerger:[['png','jpg','texturepacker','texturemerger'],u'打图集工具 提取自Egret'],
+
+    # GIMP
+    GetGIMP:[['gimp','png','image editor','jpg','photoshop','texture','ps'],u'免费开源的图片编辑工具，替代Photoshop'],
+
+    # WinMerge
+    WinMerge:[['diff','beyond compare','winmerge'],u'对比代码工具，也可以对比文件夹 文件，替代beyond compare'],
 }
 
 toolSets_old=toolSets

@@ -61,6 +61,10 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/6 新增GIMP 免费开源的图片编辑工具，替代Photoshop,关键词 ['gimp','png','image editor','jpg','photoshop','texture','ps']
+
+2019/4/6 新增WinMerge 对比代码工具，也可以对比文件夹 文件，替代beyond compare,关键词 ['diff','beyond compare','winmerge']
+
 2019/4/6 新增TextureMerger 打图集工具 提取自Egret,关键词 ['png','jpg','texturepacker','texturemerger']
 
 2019/4/6 新增luac,关键词 ['luac','lua']

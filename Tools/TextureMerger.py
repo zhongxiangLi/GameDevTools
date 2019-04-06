@@ -28,6 +28,7 @@ def run():
     
     # 直接打开
     tmpExePath=os.getcwd()+"/Tools/TextureMerger/TextureMerger/TextureMerger.exe"
+    print(tmpExePath)
     os.system(tmpExePath)
 
 if __name__=="__main__":
