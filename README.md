@@ -5,9 +5,8 @@
 
 # 搜索工具
 
-输入关键字，搜索工具
-
-比如想获取字符串md5，输入md5搜索，则会列出md5 相关工具
+比如我想查找打图集工具，关键词 texturepacker。
+那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。
 
 输入工具序号，即可使用工具
 
@@ -61,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/6 新增SimpleDownload 单文件下载器，省的打开迅雷或者浏览器,关键词 ['http download','xunlei','xuanfeng','kuaiche','idm']
+
 2019/4/6 新增GIMP 免费开源的图片编辑工具，替代Photoshop,关键词 ['gimp','png','image editor','jpg','photoshop','texture','ps']
 
 2019/4/6 新增WinMerge 对比代码工具，也可以对比文件夹 文件，替代beyond compare,关键词 ['diff','beyond compare','winmerge']

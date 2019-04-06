@@ -18,6 +18,8 @@ from Tools import luac_5_3_5_Debug
 from Tools import TextureMerger
 from Tools import GetGIMP
 from Tools import WinMerge
+from Tools import GetBigJPG
+from Tools import SimpleDownload
 
 toolSets=\
 {
@@ -74,6 +76,12 @@ toolSets=\
 
     # WinMerge
     WinMerge:[['diff','beyond compare','winmerge'],u'对比代码工具，也可以对比文件夹 文件，替代beyond compare'],
+
+    # GetBigJPG
+    GetBigJPG:[['imagescale','bigjpg','ai'],u'AI人工智能图片放大'],
+
+    # SimpleDownload
+    SimpleDownload:[['http download','xunlei','xuanfeng','kuaiche','idm'],u'单文件下载器，省的打开迅雷或者浏览器'],
 }
 
 toolSets_old=toolSets
@@ -89,6 +97,9 @@ for tmpTool,tmpToolInfo in toolSets_old.items():
 
 # print(toolSets)
 # print(toolSets[GetFileMD5])
+
+# 第一次进入Choose 提示按回车返回Search
+_Show_Choose_Tips=True
 
 def searchKeyword(varKeyword):
     # 先提取所有Keyword
@@ -112,9 +123,17 @@ def searchKeyword(varKeyword):
                 tmpTools_for_Search.append(tmpTool)
 
     # 输出结果
+    print('\n----------------------------------------')
     for tmpIndex in range(len(tmpTools_for_Search)):
         tmpOneTool=tmpTools_for_Search[tmpIndex]
         print(str(tmpIndex)+":"+tmpOneTool.__name__+" -"+toolSets_old[tmpOneTool][1])
+    print('----------------------------------------\n')
+
+    global _Show_Choose_Tips
+    if _Show_Choose_Tips:
+        print(u'\n直接按回车，可以返回Search')
+        _Show_Choose_Tips=False
+        
     tmpIndex=raw_input("Choose:").replace('\r','').replace('\n','').replace(' ','')
     tmpIndexStr=str(tmpIndex).strip()
     
@@ -136,4 +155,5 @@ def sayHello():
     sayHello()
 
 if __name__=="__main__":
-     sayHello()
+    print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n')
+    sayHello()
