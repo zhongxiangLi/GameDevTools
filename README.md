@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/7 SqliteStudio 2.1.5 sqlite3管理软件,关键词 ['sqlitestudio_2_1_5','db','sqlite3']
+
 2019/4/6 https://www.freesoundeffects.com/ 免费音效下载网站,关键词 ['visitfreesoundeffect','mp3','audio','wav','audio']
 
 2019/4/6 新增SimpleDownload 单文件下载器，省的打开迅雷或者浏览器,关键词 ['http download','xunlei','xuanfeng','kuaiche','idm']
