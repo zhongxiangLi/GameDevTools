@@ -22,6 +22,7 @@ from Tools import GetBigJPG
 from Tools import SimpleDownload
 from Tools import VisitFreeSoundEffect
 from Tools import SqliteStudio_2_1_5
+from Tools import putty
 
 toolSets=\
 {
@@ -90,6 +91,9 @@ toolSets=\
 
     # SqliteStudio_2_1_5
     SqliteStudio_2_1_5:[['sqlitestudio_2_1_5','db','sqlite3'],u'sqlite3管理软件'],
+
+    # putty
+    putty:[['putty','ssh'],u'远程Linux'],
 }
 
 toolSets_old=toolSets
