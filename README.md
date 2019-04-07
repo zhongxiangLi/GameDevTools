@@ -60,6 +60,12 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/8 GetStrSHA1 sha1编码,关键词 ['sha1hash']
+
+2019/4/8 GetStrBASE64 Base64编码,关键词 ['base64encode']
+
+2019/4/8 BASE64_Decode Base64解码,关键词 ['base64decode']
+
 2019/4/7 putty 远程Linux,关键词 ['putty','ssh']
 
 2019/4/7 SqliteStudio 2.1.5 sqlite3管理软件,关键词 ['sqlitestudio_2_1_5','db','sqlite3']

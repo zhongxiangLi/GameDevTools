@@ -1,0 +1,14 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+import base64
+import Helper
+
+#使用python 库  求MD5
+def run():
+    #求字符串MD5
+    tmpStr=Helper.Remove_r_n(str(raw_input("Input String:")))
+    md5 = base64.b64encode(tmpStr)
+    print(md5)
+
+if __name__=="__main__":
+    run()

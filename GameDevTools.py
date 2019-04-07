@@ -23,6 +23,9 @@ from Tools import SimpleDownload
 from Tools import VisitFreeSoundEffect
 from Tools import SqliteStudio_2_1_5
 from Tools import putty
+from Tools import GetStrSHA1
+from Tools import GetStrBASE64
+from Tools import BASE64_Decode
 
 toolSets=\
 {
@@ -94,6 +97,15 @@ toolSets=\
 
     # putty
     putty:[['putty','ssh'],u'远程Linux'],
+
+    # SHA1
+    GetStrSHA1:[['sha1hash'],u'sha1编码'],
+
+    # Base64编码
+    GetStrBASE64:[['base64encode'],u'Base64编码'],
+
+    # Base64解码
+    BASE64_Decode:[['base64decode'],u'Base64解码'],
 }
 
 toolSets_old=toolSets
