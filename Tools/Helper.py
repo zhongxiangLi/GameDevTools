@@ -30,5 +30,10 @@ def DownLoad(varUrl,varSavePath):
         print(STR_INVALID_URL)
         return False
 
+def OpenOneToolDir(varDir):
+    tmpExePath=os.getcwd()+"/Tools/"+varDir
+    # print(tmpExePath)
+    os.system('start '+tmpExePath)
+
 if __name__=="__main__":
     DownLoad('http://pic.cnblogs.com/face/u337375.jpg','./u337375.jpg')
