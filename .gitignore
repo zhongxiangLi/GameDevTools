@@ -1,3 +1,11 @@
 Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/Android
 Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/Android HD
 Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/IOS
+Tools/TextureMerger/*
+!Tools/TextureMerger/TextureMerger.zip
+Tools/AssetStudio/*
+!/Tools/AssetStudio/AssetStudio.x64.v0.12.49.zip
+Tools/WinMerge/*
+!/Tools/WinMerge/winmerge-2.16.2-x64-exe.zip
+Tools/sqlitestudio-2.1.5/*
+!/Tools/sqlitestudio-2.1.5/sqlitestudio-2.1.5.exe.zip

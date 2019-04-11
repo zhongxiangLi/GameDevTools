@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/11 UnityAssetStudio Unity 资源导出工具,关键词 ['unityassetstudiogui','unitystudio','unityassetbundleexport']
+
 2019/4/8 GetStrSHA1 sha1编码,关键词 ['sha1hash']
 
 2019/4/8 GetStrBASE64 Base64编码,关键词 ['base64encode']

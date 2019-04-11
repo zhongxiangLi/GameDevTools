@@ -26,6 +26,7 @@ from Tools import putty
 from Tools import GetStrSHA1
 from Tools import GetStrBASE64
 from Tools import BASE64_Decode
+from Tools import UnityAssetStudio
 
 toolSets=\
 {
@@ -106,6 +107,9 @@ toolSets=\
 
     # Base64解码
     BASE64_Decode:[['base64decode'],u'Base64解码'],
+
+    # AssetStudioGUI Unity 资源导出工具
+    UnityAssetStudio:[['unityassetstudiogui','unitystudio','unityassetbundleexport'],u'Unity 资源导出工具'],
 }
 
 toolSets_old=toolSets
