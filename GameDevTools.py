@@ -27,6 +27,8 @@ from Tools import GetStrSHA1
 from Tools import GetStrBASE64
 from Tools import BASE64_Decode
 from Tools import UnityAssetStudio
+from Tools import Helper
+from Tools import to_JPG
 
 toolSets=\
 {
@@ -110,6 +112,9 @@ toolSets=\
 
     # AssetStudioGUI Unity 资源导出工具
     UnityAssetStudio:[['unityassetstudiogui','unitystudio','unityassetbundleexport'],u'Unity 资源导出工具'],
+
+    # 转JPG工具 支持单文件与文件夹
+    to_JPG:[['image conv','webp','bmp','jpg','png'],u'图片转JPG工具 支持单文件与文件夹'],
 }
 
 toolSets_old=toolSets
@@ -172,7 +177,8 @@ def searchKeyword(varKeyword):
             tmpIndex=int(tmpIndexStr)
             print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
             tmpTools_for_Search[tmpIndex].run()
-        except:
+        except Exception,ex:
+            print(ex)
             sayHello()
 
 def sayHello():
@@ -183,5 +189,6 @@ def sayHello():
     sayHello()
 
 if __name__=="__main__":
+    Helper.Checkpip()
     print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n')
     sayHello()

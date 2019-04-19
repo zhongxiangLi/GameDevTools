@@ -1,6 +1,5 @@
-Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/Android
-Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/Android HD
-Tools/MultiSizeIcon/MultiSizeIcon/bin/Debug/IOS
+Tools/MultiSizeIcon/*
+!Tools/MultiSizeIcon/MultiSizeIcon.zip
 Tools/TextureMerger/*
 !Tools/TextureMerger/TextureMerger.zip
 Tools/AssetStudio/*

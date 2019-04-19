@@ -35,5 +35,34 @@ def OpenOneToolDir(varDir):
     # print(tmpExePath)
     os.system('start '+tmpExePath)
 
-if __name__=="__main__":
-    DownLoad('http://pic.cnblogs.com/face/u337375.jpg','./u337375.jpg')
+# if __name__=="__main__":
+    # DownLoad('http://pic.cnblogs.com/face/u337375.jpg','./u337375.jpg')
+
+# 检查pip是否安装
+def Checkpip():
+    try:
+        import pip
+    except:
+        print("pip not install,now intall...")
+        os.system('python ./Tools/Depends/get-pip.py')
+
+# 安装模块
+def InstallModule(varModuleName):
+    print("Pillow not install,now intall...")
+    os.system('pip install '+varModuleName)
+    print('Pillow install finish')
+
+# 获取目录文件列表 包括子目录
+def list_all_files(rootdir):
+    import os
+    _files = []
+    list = os.listdir(rootdir) #列出文件夹下所有的目录与文件
+    for i in range(0,len(list)):
+           path = os.path.join(rootdir,list[i])
+           if os.path.isdir(path):
+              _files.extend(list_all_files(path))
+           if os.path.isfile(path):
+              _files.append(path)
+    return _files
+
+# Checkpip()

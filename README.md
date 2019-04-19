@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/19 to_JPG 图片转JPG工具 支持单文件与文件夹,关键词 ['image conv','webp','bmp','jpg','png']
+
 2019/4/11 UnityAssetStudio Unity 资源导出工具,关键词 ['unityassetstudiogui','unitystudio','unityassetbundleexport']
 
 2019/4/8 GetStrSHA1 sha1编码,关键词 ['sha1hash']
