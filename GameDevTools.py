@@ -31,6 +31,7 @@ from Tools import Helper
 from Tools import to_JPG
 from Tools import ImageResize
 from Tools import ImageScale
+from Tools import Audio_HZ_KBPS_Tools
 
 toolSets=\
 {
@@ -123,6 +124,9 @@ toolSets=\
 
     # 图片缩放工具 指定比例
     ImageScale:[['imagerescale','png','jpg','resize'],u'图片缩放 指定比例'],
+
+    # 音效格式转换工具 设置hz 比特率 
+    Audio_HZ_KBPS_Tools:[['audio_hz_kbps_bits','mp3','ogg','wav'],u'音效格式转换工具 设置hz 比特率 '],
 }
 
 toolSets_old=toolSets
