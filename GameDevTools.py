@@ -29,6 +29,8 @@ from Tools import BASE64_Decode
 from Tools import UnityAssetStudio
 from Tools import Helper
 from Tools import to_JPG
+from Tools import ImageResize
+from Tools import ImageScale
 
 toolSets=\
 {
@@ -115,6 +117,12 @@ toolSets=\
 
     # 转JPG工具 支持单文件与文件夹
     to_JPG:[['image conv','webp','bmp','jpg','png'],u'图片转JPG工具 支持单文件与文件夹'],
+
+    # 图片缩放工具
+    ImageResize:[['imageresize','png','jpg'],u'图片缩放 指定尺寸'],
+
+    # 图片缩放工具 指定比例
+    ImageScale:[['imagerescale','png','jpg','resize'],u'图片缩放 指定比例'],
 }
 
 toolSets_old=toolSets
