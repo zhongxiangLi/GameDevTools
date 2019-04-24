@@ -28,11 +28,13 @@ def run():
         print(u"解压完成\n")
 
 
+    print(u"MP3的采样频率分为48000 44100 32000 24000 22050 16000 12050 8000等等。\n码率有320kbps 256 224 192 128 112 96 80 64 56等等，都是2的n次方。\n")
+
     print(u"输入音效文件地址:")
     tmpFilePath=str(raw_input())
     tmpFilePath=Helper.Remove_r_n(tmpFilePath)
     
-    print(u"输入Hz(默认44100):")
+    print(u"输入采样(默认44100hz):")
     tmpHZ=str(raw_input())
     tmpHZ=Helper.Remove_r_n(tmpHZ)
     if tmpHZ=="":
