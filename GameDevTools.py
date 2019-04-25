@@ -29,6 +29,7 @@ from Tools import BASE64_Decode
 from Tools import UnityAssetStudio
 from Tools import Helper
 from Tools import to_JPG
+from Tools import GetMediBangPaintPro
 
 toolSets=\
 {
@@ -115,6 +116,23 @@ toolSets=\
 
     # 转JPG工具 支持单文件与文件夹
     to_JPG:[['image conv','webp','bmp','jpg','png'],u'图片转JPG工具 支持单文件与文件夹'],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # MediBangPaintPro
+    GetMediBangPaintPro:[['medibangpaintpro','png','image editor','jpg','photoshop','texture','ps'],u'免费的图片编辑工具，替代Photoshop'],
 }
 
 toolSets_old=toolSets
