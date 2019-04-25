@@ -65,4 +65,24 @@ def list_all_files(rootdir):
               _files.append(path)
     return _files
 
+def getUnixPath(varpath):
+    return varpath.replace('\\\\','/').replace('\\','/')
+
+def getWinPath(varpath):
+    varpath=varpath.replace('//','\\\\').replace('/','\\\\')
+
+    tmpNewPath=""
+    for tmpIndex in range(len(varpath)):
+        if (tmpIndex>0 and varpath[tmpIndex-1]!='\\') and varpath[tmpIndex]=='\\' and (tmpIndex<(len(varpath)-1) and varpath[tmpIndex+1]!='\\'):
+            tmpNewPath=tmpNewPath+'\\'
+        tmpNewPath=tmpNewPath+varpath[tmpIndex]
+
+    return tmpNewPath
+
+
+# 从文件路径 获取文件夹路径
+def getdirpath(varfilepath):
+    varfilepath=getUnixPath(varfilepath)
+    tmpStrParts=varfilepath.rpartition('/')
+    return tmpStrParts[0]+'/'
 # Checkpip()

@@ -60,6 +60,14 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/24 MergeVideo 视频合并工具 ,关键词 ['mergevideo','combine','add','mp4','flv','wmv','mkv']
+
+2019/4/24 Audio_HZ_KBPS_Tools 音效格式转换工具 设置hz 比特率 ,关键词 ['audio_hz_kbps_bits','mp3','ogg','wav']
+
+2019/4/24 ImageScale 图片缩放 指定比例,关键词 ['imagerescale','png','jpg','resize']
+
+2019/4/24 ImageResize 图片缩放 指定尺寸,关键词 ['imageresize','png','jpg']
+
 2019/4/19 to_JPG 图片转JPG工具 支持单文件与文件夹,关键词 ['image conv','webp','bmp','jpg','png']
 
 2019/4/11 UnityAssetStudio Unity 资源导出工具,关键词 ['unityassetstudiogui','unitystudio','unityassetbundleexport']

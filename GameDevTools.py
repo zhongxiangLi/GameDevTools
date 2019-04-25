@@ -30,6 +30,10 @@ from Tools import UnityAssetStudio
 from Tools import Helper
 from Tools import to_JPG
 from Tools import GetMediBangPaintPro
+from Tools import ImageResize
+from Tools import ImageScale
+from Tools import Audio_HZ_KBPS_Tools
+from Tools import MergeVideo
 
 toolSets=\
 {
@@ -118,21 +122,19 @@ toolSets=\
     to_JPG:[['image conv','webp','bmp','jpg','png'],u'图片转JPG工具 支持单文件与文件夹'],
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     # MediBangPaintPro
     GetMediBangPaintPro:[['medibangpaintpro','png','image editor','jpg','photoshop','texture','ps'],u'免费的图片编辑工具，替代Photoshop'],
+    # 图片缩放工具
+    ImageResize:[['imageresize','png','jpg'],u'图片缩放 指定尺寸'],
+
+    # 图片缩放工具 指定比例
+    ImageScale:[['imagerescale','png','jpg','resize'],u'图片缩放 指定比例'],
+
+    # 音效格式转换工具 设置hz 比特率 
+    Audio_HZ_KBPS_Tools:[['audio_hz_kbps_bits','mp3','ogg','wav'],u'音效格式转换工具 设置hz 比特率'],
+
+    # 视频合并工具
+    MergeVideo:[['mergevideo','combine','add','mp4','flv','wmv','mkv'],u'视频合并工具'],
 }
 
 toolSets_old=toolSets
