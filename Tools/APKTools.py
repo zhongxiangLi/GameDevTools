@@ -27,7 +27,7 @@ def run():
         print(u"解压完成\n")
 
     # print(tmpExePath)
-    Helper.OpenOneToolDir("APKTool/APKTool/")
+    Helper.OpenOneToolDir("APKTool/APKTool/APKTool/")
 
 
 if __name__=="__main__":

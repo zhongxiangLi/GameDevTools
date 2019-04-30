@@ -11,4 +11,5 @@ Tools/sqlitestudio-2.1.5/*
 Tools/ffmpeg/*
 !/Tools/ffmpeg/ffmpeg.zip
 *.pyc
+Tools/APKTool/*
 !/Tools/APKTool/APKTool.zip
