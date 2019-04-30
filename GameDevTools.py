@@ -34,6 +34,7 @@ from Tools import ImageResize
 from Tools import ImageScale
 from Tools import Audio_HZ_KBPS_Tools
 from Tools import MergeVideo
+from Tools import APKTools
 
 toolSets=\
 {
@@ -135,6 +136,9 @@ toolSets=\
 
     # 视频合并工具
     MergeVideo:[['mergevideo','combine','add','mp4','flv','wmv','mkv'],u'视频合并工具'],
+
+    # APKTool APK反编译工具套装
+    APKTools:[['apktools','adb','jdjui','aapt'],u'APK反编译工具套装'],
 }
 
 toolSets_old=toolSets

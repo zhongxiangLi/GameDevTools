@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/4/30 APKTools APK反编译工具套装 ,关键词 ['apktools','adb','jdjui','aapt']
+
 2019/4/24 MergeVideo 视频合并工具 ,关键词 ['mergevideo','combine','add','mp4','flv','wmv','mkv']
 
 2019/4/24 Audio_HZ_KBPS_Tools 音效格式转换工具 设置hz 比特率 ,关键词 ['audio_hz_kbps_bits','mp3','ogg','wav']
