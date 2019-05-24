@@ -7,7 +7,7 @@ def run():
     #求字符串MD5
     # md5 = hashlib.md5('字符串').hexdigest()
     #求文件md5
-    tmpFilePath=raw_input("Input FilePath:")
+    tmpFilePath=input("Input FilePath:")
     tmpFilePath=tmpFilePath.replace("\r","").replace("\n","")
     tmpFile = open(tmpFilePath,'rb')
     md5 = hashlib.md5(tmpFile.read()).hexdigest()

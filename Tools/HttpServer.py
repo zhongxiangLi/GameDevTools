@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-import SimpleHTTPServer_WithPath
+from . import SimpleHTTPServer_WithPath
 import SocketServer
 
 #使用python 库  求MD5
