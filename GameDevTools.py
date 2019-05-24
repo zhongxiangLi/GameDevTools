@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+from Tools import Helper
+Helper.Checkpip()
+
 from Tools import GetFileMD5
 from Tools import GetStrMD5
 from Tools import GetUnixTimeStamp
@@ -27,7 +30,7 @@ from Tools import GetStrSHA1
 from Tools import GetStrBASE64
 from Tools import BASE64_Decode
 from Tools import UnityAssetStudio
-from Tools import Helper
+
 from Tools import to_JPG
 from Tools import GetMediBangPaintPro
 from Tools import ImageResize
@@ -213,6 +216,6 @@ def sayHello():
     sayHello()
 
 if __name__=="__main__":
-    Helper.Checkpip()
+
     print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n')
     sayHello()
