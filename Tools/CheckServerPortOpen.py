@@ -5,8 +5,8 @@ import socket
 #使用python 库  求MD5
 def run():
     #求字符串MD5
-    tmpStr_IP=raw_input("Input IP:").replace('\r','').replace('\n','')
-    tmpStr_Port=raw_input("Input Port:").replace('\r','').replace('\n','')
+    tmpStr_IP=input("Input IP:").replace('\r','').replace('\n','')
+    tmpStr_Port=input("Input Port:").replace('\r','').replace('\n','')
     s = socket.socket()
     tmpPort=int(tmpStr_Port)
     try:

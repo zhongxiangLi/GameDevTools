@@ -1,12 +1,21 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-from . import SimpleHTTPServer_WithPath
-import SocketServer
+import os
+import subprocess
 
 #使用python 库  求MD5
 def run():
-    tmpWWW_Dir=raw_input("Input WWW Dir:").replace('\r','').replace('\n','')
-    SimpleHTTPServer_WithPath.test(tmpWWW_Dir)
+    tmpCWD=os.getcwd()
+    tmpWWW_Dir=input("Input WWW Dir:").replace('\r','').replace('\n','')
+    os.chdir(tmpWWW_Dir)
+
+    tmpCommand="python -m http.server 8000"
+    print(tmpCommand)
+    os.system(tmpCommand)
+
+    os.chdir(os.getcwd())
+    
+    
 
 if __name__=="__main__":
     run()

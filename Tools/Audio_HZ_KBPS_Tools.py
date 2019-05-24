@@ -31,23 +31,23 @@ def run():
     print(u"MP3的采样频率分为48000 44100 32000 24000 22050 16000 12050 8000等等。\n码率有320kbps 256 224 192 128 112 96 80 64 56等等，都是2的n次方。\n")
 
     print(u"输入音效文件地址:")
-    tmpFilePath=str(raw_input())
+    tmpFilePath=str(input())
     tmpFilePath=Helper.Remove_r_n(tmpFilePath)
     
     print(u"输入采样(默认44100hz):")
-    tmpHZ=str(raw_input())
+    tmpHZ=str(input())
     tmpHZ=Helper.Remove_r_n(tmpHZ)
     if tmpHZ=="":
         tmpHZ="44100"
 
     print(u"输入声道 数字(默认单声道 1):")
-    tmpChannel=str(raw_input())
+    tmpChannel=str(input())
     tmpChannel=Helper.Remove_r_n(tmpChannel)
     if tmpChannel=="":
         tmpChannel="1"
 
     print(u"输入比特率 数字(默认96kbps):")
-    tmpBits=str(raw_input())
+    tmpBits=str(input())
     tmpBits=Helper.Remove_r_n(tmpBits)
     if tmpBits=="":
         tmpBits="96k"

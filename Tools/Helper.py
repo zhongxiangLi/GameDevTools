@@ -40,6 +40,7 @@ def OpenOneToolDir(varDir):
 
 # 检查pip是否安装
 def Checkpip():
+    print("Checkpip")
     try:
         import pip
     except:

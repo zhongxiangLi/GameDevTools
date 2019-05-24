@@ -13,11 +13,11 @@ except:
 def run():
     # print("to_JPG")
 
-    tmpFilePath=str(raw_input("Input PNG or dir Path:"))
+    tmpFilePath=str(input("Input PNG or dir Path:"))
     tmpFilePath=tmpFilePath.replace("\r","").replace("\n","")
     print('Convert '+tmpFilePath+':\n')
 
-    tmpNewSize=str(raw_input("Input Size eg:100,100:"))
+    tmpNewSize=str(input("Input Size eg:100,100:"))
     tmpNewSize=Helper.Remove_r_n(tmpNewSize)
     tmpStrParts=tmpNewSize.partition(',')
     tmpWidth=int(tmpStrParts[0])

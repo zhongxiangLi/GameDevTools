@@ -7,7 +7,7 @@ import os
 #使用python 库
 def run():
     if sys.version_info<(3,0):
-        tmpZipFilePath=raw_input("ZipFilePath:")
+        tmpZipFilePath=input("ZipFilePath:")
     else:
         tmpZipFilePath=input("ZipFilePath:")
 

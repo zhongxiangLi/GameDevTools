@@ -13,11 +13,11 @@ except:
 def run():
     # print("to_JPG")
 
-    tmpFilePath=str(raw_input("Input PNG or dir Path:"))
+    tmpFilePath=str(input("Input PNG or dir Path:"))
     tmpFilePath=tmpFilePath.replace("\r","").replace("\n","")
     print('Convert '+tmpFilePath+':\n')
 
-    tmpScaleStr=str(raw_input("Input Scale eg:0.6:"))
+    tmpScaleStr=str(input("Input Scale eg:0.6:"))
     tmpScaleStr=Helper.Remove_r_n(tmpScaleStr)
     tmpScale=float(tmpScaleStr)
 

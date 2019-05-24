@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 import os
 import zipfile
-import Helper
+from . import Helper
 
 #使用python 库  求MD5
 def run():

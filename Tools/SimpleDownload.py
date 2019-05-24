@@ -1,15 +1,15 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import os
-import Helper
+from . import Helper
 
 STR_DOWNLOAD_SUCCESS='DownLoad Success!'
 STR_DOWNLOAD_FAILED='DownLoad Failed!'
 
 def run():
-    tmpUrl=raw_input("Input Url:")
+    tmpUrl=input("Input Url:")
     if Helper.CheckUrl_Http_Https(tmpUrl):
-        tmpSavePath=raw_input("Input SavePath:")
+        tmpSavePath=input("Input SavePath:")
         tmpSavePathStr=str(tmpSavePath)
         tmpSavePathStr=Helper.Remove_r_n(tmpSavePathStr)
 

@@ -22,7 +22,7 @@ def convert_one(varFilePath):
 def run():
     # print("to_JPG")
 
-    tmpFilePath=str(raw_input("Input PNG or dir Path:"))
+    tmpFilePath=str(input("Input PNG or dir Path:"))
     tmpFilePath=tmpFilePath.replace("\r","").replace("\n","")
     # print('Convert '+tmpFilePath+':\n')
     

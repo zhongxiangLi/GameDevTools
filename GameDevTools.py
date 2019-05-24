@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+from Tools import Helper
+Helper.Checkpip()
+
 from Tools import GetFileMD5
 from Tools import GetStrMD5
 from Tools import GetUnixTimeStamp
@@ -27,7 +30,6 @@ from Tools import GetStrSHA1
 from Tools import GetStrBASE64
 from Tools import BASE64_Decode
 from Tools import UnityAssetStudio
-from Tools import Helper
 from Tools import to_JPG
 from Tools import GetMediBangPaintPro
 from Tools import ImageResize
@@ -146,7 +148,7 @@ toolSets={}
 # 反转
 for tmpTool,tmpToolInfo in toolSets_old.items():
     for tmpOneKeyword in tmpToolInfo[0]:
-        if toolSets.has_key(tmpOneKeyword)==False:
+        if (tmpOneKeyword in toolSets)==False:
             toolSets[tmpOneKeyword]=[]
         toolSets[tmpOneKeyword].append(tmpTool)
 
@@ -191,7 +193,7 @@ def searchKeyword(varKeyword):
         print(u'\n直接按回车，可以返回Search')
         _Show_Choose_Tips=False
         
-    tmpIndex=raw_input("Choose:").replace('\r','').replace('\n','').replace(' ','')
+    tmpIndex=input("Choose:").replace('\r','').replace('\n','').replace(' ','')
     tmpIndexStr=str(tmpIndex).strip()
     
     if tmpIndexStr=="":
@@ -206,13 +208,12 @@ def searchKeyword(varKeyword):
             sayHello()
 
 def sayHello():
-    tmpKeyword=raw_input("Search:")
+    tmpKeyword=input("Search:")
     searchKeyword(tmpKeyword.rstrip('\r'))
     print('\n\n')
         
     sayHello()
 
 if __name__=="__main__":
-    Helper.Checkpip()
     print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n')
     sayHello()

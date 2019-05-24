@@ -35,11 +35,11 @@ def run():
     
 
     print(u"输入第一个视频文件地址:")
-    tmpFirstFilePath=str(raw_input())
+    tmpFirstFilePath=str(input())
     tmpFirstFilePath=Helper.Remove_r_n(tmpFirstFilePath)
 
     print(u"输入第二个视频文件地址:")
-    tmpSecondFilePath=str(raw_input())
+    tmpSecondFilePath=str(input())
     tmpSecondFilePath=Helper.Remove_r_n(tmpSecondFilePath)
     
     # 首先生成 .actemp 文件
