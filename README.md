@@ -1,5 +1,7 @@
 # GameDevTools
-游戏开发日常用到的工具集
+游戏开发日常用到的工具集，基于Python2.7
+
+<font color=red>已支持Python3，切换到Python3分支即可</font>
 
 将GameDevTools.bat 创建快捷方式 放到桌面就可以快速打开
 
