@@ -6,7 +6,7 @@ import hashlib
 def run():
     #求字符串MD5
     tmpStr=input("Input String:")
-    md5 = hashlib.md5(tmpStr).hexdigest()
+    md5 = hashlib.md5(tmpStr.encode("utf-8")).hexdigest()
     print(md5)
 
 if __name__=="__main__":

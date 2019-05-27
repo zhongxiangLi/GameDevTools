@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 import os
 import urllib 
+from urllib import request
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -24,7 +25,7 @@ def DownLoad(varUrl,varSavePath):
     if CheckUrl_Http_Https(varUrl):
         print(u"DownLoading:"+varUrl)
         varUrl=Remove_r_n(varUrl)
-        urllib.urlretrieve(varUrl, varSavePath)
+        request.urlretrieve(varUrl, varSavePath)
         return True
     else:
         print(STR_INVALID_URL)

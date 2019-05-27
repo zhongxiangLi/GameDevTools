@@ -68,7 +68,7 @@ toolSets=\
     UnZipTools:[['zip','unzip','extra','extract'],u'解压ZIP'],
 
     # Unicode 转 普通中文显示 \u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8 人生苦短，py是岸
-    UnicodeToChinese:[['unicode','gbk','chinese','\\u','url','urlencode','code','codec'],'Unicode 转 普通中文显示 \u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8 人生苦短，py是岸'],
+    UnicodeToChinese:[['unicode','gbk','chinese','\\u','url','urlencode','code','codec'],'Unicode 转 普通中文显示 \\u4eba\\u751f\\u82e6\\u77ed\\uff0cpy\\u662f\\u5cb8 人生苦短，py是岸'],
 
     # 屏幕录制Gif
     ScreenCaptureGif:[['gif','screen','capture','rec','url','licecap','cap'],u'屏幕录制Gif'],

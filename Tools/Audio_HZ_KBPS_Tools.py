@@ -50,7 +50,7 @@ def run():
     tmpBits=str(input())
     tmpBits=Helper.Remove_r_n(tmpBits)
     if tmpBits=="":
-        tmpBits="96k"
+        tmpBits="96"
 
     tmpStrParts=tmpFilePath.rpartition('.')
     tmpNewPath=tmpStrParts[0]+'_new'+tmpStrParts[1]+tmpStrParts[2]
