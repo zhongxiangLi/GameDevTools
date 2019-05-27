@@ -13,3 +13,4 @@ Tools/ffmpeg/*
 *.pyc
 Tools/APKTool/*
 !/Tools/APKTool/APKTool.zip
+Tools/HarExport/Export

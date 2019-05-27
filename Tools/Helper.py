@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 import os
 import urllib 
+import codecs
 from urllib import request
 
 # 不规范的Url 
@@ -41,7 +42,7 @@ def OpenOneToolDir(varDir):
 
 # 检查pip是否安装
 def Checkpip():
-    print("Checkpip")
+    # print("Checkpip")
     try:
         import pip
     except:
@@ -88,3 +89,10 @@ def getdirpath(varfilepath):
     tmpStrParts=varfilepath.rpartition('/')
     return tmpStrParts[0]+'/'
 # Checkpip()
+
+# 显示Logo
+def ShowLogo(varToolTitle):
+    with codecs.open("./data.bin","r","utf-8",errors='ignore') as tmpLogoFile:
+        print(tmpLogoFile.read())
+    print(varToolTitle)
+    print("\n\n")

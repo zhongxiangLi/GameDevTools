@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+import os
 
 from Tools import Helper
 Helper.Checkpip()
@@ -37,6 +38,12 @@ from Tools import ImageScale
 from Tools import Audio_HZ_KBPS_Tools
 from Tools import MergeVideo
 from Tools import APKTools
+from Tools.HarExport import HarExport
+
+
+os.system("mode con cols=121 lines=35")
+
+HarExport.Helper.ShowLogo("游戏开发 工具套装")
 
 toolSets=\
 {
@@ -141,6 +148,9 @@ toolSets=\
 
     # APKTool APK反编译工具套装
     APKTools:[['apktools','adb','jdjui','aapt'],u'APK反编译工具套装'],
+
+    # HarExport H5网页游戏资源提取
+    HarExport:[['harexport','h5','html','web'],u'H5网页游戏资源提取'],
 }
 
 toolSets_old=toolSets

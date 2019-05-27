@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/5/17 HarExport H5网页游戏资源提取 ,关键词 ['harexport','h5','html','web']
+
 2019/4/30 APKTools APK反编译工具套装 ,关键词 ['apktools','adb','jdjui','aapt']
 
 2019/4/24 MergeVideo 视频合并工具 ,关键词 ['mergevideo','combine','add','mp4','flv','wmv','mkv']
