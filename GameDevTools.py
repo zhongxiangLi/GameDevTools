@@ -39,6 +39,7 @@ from Tools import Audio_HZ_KBPS_Tools
 from Tools import MergeVideo
 from Tools import APKTools
 from Tools.HarExport import HarExport
+from Tools import Everything
 
 
 os.system("mode con cols=121 lines=35")
@@ -151,6 +152,9 @@ toolSets=\
 
     # HarExport H5网页游戏资源提取
     HarExport:[['harexport','h5','html','web'],u'H5网页游戏资源提取'],
+
+    # Everything 极速搜索电脑文件
+    Everything:[['Everything','find','search','file','dir','sousuo'],u'极速搜索电脑文件'],
 }
 
 toolSets_old=toolSets

@@ -14,3 +14,5 @@ Tools/ffmpeg/*
 Tools/APKTool/*
 !/Tools/APKTool/APKTool.zip
 Tools/HarExport/Export
+Tools/Everything/*
+!/Tools/Everything/Everything-1.4.1.935.x64.zip
