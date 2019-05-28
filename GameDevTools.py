@@ -154,7 +154,7 @@ toolSets=\
     HarExport:[['harexport','h5','html','web'],u'H5网页游戏资源提取'],
 
     # Everything 极速搜索电脑文件
-    Everything:[['Everything','find','search','file','dir','sousuo'],u'极速搜索电脑文件'],
+    Everything:[['everything','find','search','file','dir','sousuo'],u'极速搜索电脑文件'],
 }
 
 toolSets_old=toolSets
