@@ -16,3 +16,5 @@ Tools/APKTool/*
 Tools/HarExport/Export
 Tools/Everything/*
 !/Tools/Everything/Everything-1.4.1.935.x64.zip
+Tools/Shadowsocks/*
+!/Tools/Shadowsocks/Shadowsocks.exe

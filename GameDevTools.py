@@ -40,6 +40,7 @@ from Tools import MergeVideo
 from Tools import APKTools
 from Tools.HarExport import HarExport
 from Tools import Everything
+from Tools import Shadowsocks
 
 
 os.system("mode con cols=121 lines=35")
@@ -155,6 +156,9 @@ toolSets=\
 
     # Everything 极速搜索电脑文件
     Everything:[['everything','find','search','file','dir','sousuo'],u'极速搜索电脑文件'],
+
+    # Shadowsocks 代理 翻墙 VPN
+    Shadowsocks:[['shadowsocks','vpn','fanqiang','daili','proxy'],u'代理 翻墙 VPN'],
 }
 
 toolSets_old=toolSets

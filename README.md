@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/5/28 Shadowsocks 代理 翻墙 VPN ,关键词 ['shadowsocks','vpn','fanqiang','daili','proxy']
+
 2019/5/28 Everything 极速搜索电脑文件 ,关键词 ['Everything','find','search','file','dir','sousuo']
 
 2019/5/17 HarExport H5网页游戏资源提取 ,关键词 ['harexport','h5','html','web']
