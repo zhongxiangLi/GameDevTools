@@ -1,2 +1,3 @@
 cd  /d  %~dp0
-python GameDevTools.py
+
+.\python-3.7.3-embed-win32\GameDevTools.bat
