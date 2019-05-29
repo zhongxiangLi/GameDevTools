@@ -5,8 +5,8 @@ def ShowLogo(varToolTitle):
 
     
 
-    with codecs.open("./data.bin","r","utf-8",errors='ignore') as tmpLogoFile:
-        print(tmpLogoFile.read())
+    # with codecs.open("./data.bin","r","utf-8",errors='ignore') as tmpLogoFile:
+        # print(tmpLogoFile.read())
     print(varToolTitle)
     print("\n\n")
 
