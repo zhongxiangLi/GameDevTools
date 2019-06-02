@@ -43,6 +43,9 @@ from Tools import APKTools
 from Tools.HarExport import HarExport
 from Tools import Everything
 from Tools import Shadowsocks
+from Tools import Ex7z
+from Tools import Archive7z
+from Tools import Win32DiskImager
 
 
 os.system("mode con cols=121 lines=35")
@@ -161,6 +164,15 @@ toolSets=\
 
     # Shadowsocks 代理 翻墙 VPN
     Shadowsocks:[['shadowsocks','vpn','fanqiang','daili','proxy'],u'代理 翻墙 VPN'],
+
+    # Ex7z 7z lzma解压
+    Ex7z:[['7z','zip','rar','lzma','jieyasuo'],u'7z lzma解压'],
+
+    # Archive7z 7z lzma压缩
+    Archive7z:[['7z','zip','rar','lzma','yasuo'],u'7z lzma压缩'],
+
+    # Win32DiskImager IOS 写入ISO系统到U盘 树莓派安装系统 
+    Win32DiskImager:[['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi'],u'写入ISO系统到U盘 树莓派安装系统'],
 }
 
 toolSets_old=toolSets
