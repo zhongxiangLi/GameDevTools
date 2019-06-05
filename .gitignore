@@ -18,3 +18,5 @@ python-3.7.3-embed-win32/Tools/Everything/*
 !/python-3.7.3-embed-win32/Tools/Everything/Everything-1.4.1.935.x64.zip
 python-3.7.3-embed-win32/Tools/Shadowsocks/*
 !/python-3.7.3-embed-win32/Tools/Shadowsocks/Shadowsocks.exe
+python-3.7.3-embed-win32/Tools/Win32DiskImager/*
+!/python-3.7.3-embed-win32/Tools/Win32DiskImager/Win32DiskImager.7z

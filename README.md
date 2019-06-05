@@ -60,6 +60,12 @@ toolSets=\
 # 更新日志
 
 ```
+2019/6/3 Win32DiskImager 写入ISO系统到U盘 树莓派安装系统 ,关键词 ['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi']
+
+2019/6/3 Archive7z 7z lzma压缩 ,关键词 ['7z','zip','rar','lzma','yasuo']
+
+2019/6/3 Ex7z 7z lzma解压 ,关键词 ['7z','zip','rar','lzma','jieyasuo']
+
 2019/5/28 Shadowsocks 代理 翻墙 VPN ,关键词 ['shadowsocks','vpn','fanqiang','daili','proxy']
 
 2019/5/28 Everything 极速搜索电脑文件 ,关键词 ['Everything','find','search','file','dir','sousuo']

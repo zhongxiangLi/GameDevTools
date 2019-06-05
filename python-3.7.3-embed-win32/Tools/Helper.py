@@ -37,6 +37,11 @@ def OpenOneToolDir(varDir):
     # print(tmpExePath)
     os.system('start '+tmpExePath)
 
+# 打开目录
+def OpenDir(varDir):
+    os.system('start '+varDir)
+
+
 # if __name__=="__main__":
     # DownLoad('http://pic.cnblogs.com/face/u337375.jpg','./u337375.jpg')
 
@@ -96,3 +101,63 @@ def ShowLogo(varToolTitle):
         print(tmpLogoFile.read())
     print(varToolTitle)
     print("\n\n")
+
+# 获取文件所在文件夹
+def GetDirFromPath(varPath):
+    return os.path.split(varPath)[0]
+
+# 获取文件名带后缀
+def GetFileNameFromPath(varPath):
+    return os.path.split(varPath)[1]
+
+# 获取文件名不带后缀
+def GetFileNameWithoutExtFromPath(varPath):
+    tmpFileName=os.path.split(varPath)[1]
+    return os.path.splitext(tmpFileName)[0]
+
+# 获取文件名后缀
+def GetFileExtFromPath(varPath):
+    return os.path.splitext(varPath)[1]
+
+# 替换文件名后缀 .7z
+def ChangePathExt(varPath,varExt):
+    tmpFilePath,tmpExt=os.path.splitext(varPath)
+    return tmpFilePath+varExt
+
+# 7z解压,传入7z文件路径，解压目录
+def Ex_7z(var7zFilePath,varOpenDir=True):
+    tmp7zExePath=os.getcwd()+"/Tools/7z/7za.exe"
+    tmpExDirPath=GetDirFromPath(var7zFilePath)
+    tmpCommand=tmp7zExePath+" x "+var7zFilePath+" -o"+tmpExDirPath
+    print(tmpCommand)
+    os.system(tmpCommand)
+    if varOpenDir:
+        OpenDir(tmpExDirPath)
+
+# 7z压缩,传入目录
+def Archive_7z(varPath=""):
+    tmp7zExePath=os.getcwd()+"/Tools/7z/7za.exe"
+
+    if os.path.isdir(varPath):
+        if varPath.endswith('/') or varPath.endswith('\\'):
+            varPath=varPath[0:-1]
+            if varPath.endswith('/') or varPath.endswith('\\'):
+                varPath=varPath[0:-1]
+        print(varPath)
+
+        
+        tmp7zFilePath=ChangePathExt(varPath,".7z")
+        tmp7zFileDirPath=GetDirFromPath(tmp7zFilePath)
+        tmpCommand=tmp7zExePath+" a -t7z "+tmp7zFilePath+" "+varPath+"\\* -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
+        print(tmpCommand)
+        os.system(tmpCommand)
+        OpenDir(tmp7zFileDirPath)
+    elif os.path.isfile(varPath):
+        tmp7zFilePath=ChangePathExt(varPath,".7z")
+        tmp7zFileDirPath=GetDirFromPath(tmp7zFilePath)
+        tmpCommand=tmp7zExePath+" a -t7z "+tmp7zFilePath+" "+varPath+" -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
+        print(tmpCommand)
+        os.system(tmpCommand)
+        OpenDir(tmp7zFileDirPath)
+
+    
