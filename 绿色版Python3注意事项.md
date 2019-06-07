@@ -46,3 +46,9 @@ python -m pip +命令
 python -m pip install pyside2
 ```
 
+
+使用国内镜像加速
+
+```
+python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyside2
+```
