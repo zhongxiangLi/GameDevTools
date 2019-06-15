@@ -3,6 +3,10 @@
 
 将GameDevTools.bat 创建快捷方式 放到桌面就可以快速打开
 
+网络慢的可以尝试下载Release版本
+
+https://github.com/ThisisGame/GameDevTools/releases
+
 # 搜索工具
 
 比如我想查找打图集工具，关键词 texturepacker。
