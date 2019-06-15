@@ -10,6 +10,14 @@ except:
     Helper.InstallModule('Pillow')
     from PIL import Image
 
+def Resize(varPath,varScale):
+    tmpImage=Image.open(varPath)
+    print("Image Size:"+str(tmpImage.width)+","+str(tmpImage.height))
+
+    tmpWidth=tmpImage.width*varScale
+    tmpHeight=tmpImage.height*varScale
+    tmpImage.resize((int(tmpWidth),int(tmpHeight)),Image.ANTIALIAS).save(varPath)
+
 def run():
     # print("to_JPG")
 
@@ -21,12 +29,15 @@ def run():
     tmpScaleStr=Helper.Remove_r_n(tmpScaleStr)
     tmpScale=float(tmpScaleStr)
 
-    tmpImage=Image.open(tmpFilePath)
-    print("Image Size:"+str(tmpImage.width)+","+str(tmpImage.height))
+    if os.path.isdir(tmpFilePath):
+        tmpFilePathList=Helper.list_all_files(tmpFilePath)
+        for tmpOneFilePath in tmpFilePathList:
+            Resize(tmpOneFilePath,tmpScale)
 
-    tmpWidth=tmpImage.width*tmpScale
-    tmpHeight=tmpImage.height*tmpScale
-    tmpImage.resize((int(tmpWidth),int(tmpHeight)),Image.ANTIALIAS).save(tmpFilePath)
+    elif os.path.isfile(tmpFilePath):
+        Resize(tmpFilePath,tmpScale)
+
+    
 
 
 

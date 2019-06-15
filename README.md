@@ -60,6 +60,8 @@ toolSets=\
 # 更新日志
 
 ```
+2019/6/15 phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader 官网 http://phpstudy.php.cn/wenda/407.html
+
 2019/6/3 Win32DiskImager 写入ISO系统到U盘 树莓派安装系统 ,关键词 ['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi']
 
 2019/6/3 Archive7z 7z lzma压缩 ,关键词 ['7z','zip','rar','lzma','yasuo']

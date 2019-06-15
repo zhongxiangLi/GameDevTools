@@ -46,6 +46,7 @@ from Tools import Shadowsocks
 from Tools import Ex7z
 from Tools import Archive7z
 from Tools import Win32DiskImager
+from Tools import PhpStudy
 
 
 os.system("mode con cols=121 lines=35")
@@ -173,6 +174,9 @@ toolSets=\
 
     # Win32DiskImager IOS 写入ISO系统到U盘 树莓派安装系统 
     Win32DiskImager:[['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi'],u'写入ISO系统到U盘 树莓派安装系统'],
+
+    # phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader 官网 http://phpstudy.php.cn/wenda/407.html
+    PhpStudy:[['phpstudy','Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader'],u'phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader'],
 }
 
 toolSets_old=toolSets
@@ -180,6 +184,7 @@ toolSets={}
 # 反转
 for tmpTool,tmpToolInfo in toolSets_old.items():
     for tmpOneKeyword in tmpToolInfo[0]:
+        tmpOneKeyword=tmpOneKeyword.lower()#使用小写字母作为关键词检索
         if (tmpOneKeyword in toolSets)==False:
             toolSets[tmpOneKeyword]=[]
         toolSets[tmpOneKeyword].append(tmpTool)
@@ -193,6 +198,8 @@ for tmpTool,tmpToolInfo in toolSets_old.items():
 _Show_Choose_Tips=True
 
 def searchKeyword(varKeyword):
+    varKeyword=varKeyword.lower()#使用小写字母作为关键词检索
+
     # 先提取所有Keyword
     tmpAllKeyword=toolSets.keys()
     # 然后提取包含 搜索字的 关键词

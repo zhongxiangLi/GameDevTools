@@ -20,3 +20,6 @@ python-3.7.3-embed-win32/Tools/Shadowsocks/*
 !/python-3.7.3-embed-win32/Tools/Shadowsocks/Shadowsocks.exe
 python-3.7.3-embed-win32/Tools/Win32DiskImager/*
 !/python-3.7.3-embed-win32/Tools/Win32DiskImager/Win32DiskImager.7z
+
+python-3.7.3-embed-win32/Tools/phpStudy20161103/*
+!/python-3.7.3-embed-win32/Tools/phpStudy20161103/phpStudy.7z
