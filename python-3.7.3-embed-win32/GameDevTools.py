@@ -47,6 +47,8 @@ from Tools import Ex7z
 from Tools import Archive7z
 from Tools import Win32DiskImager
 from Tools import PhpStudy
+from Tools import CombineTxtToOneFile
+from Tools import ProfilerLuaMemory
 
 
 os.system("mode con cols=121 lines=35")
@@ -177,6 +179,12 @@ toolSets=\
 
     # phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader 官网 http://phpstudy.php.cn/wenda/407.html
     PhpStudy:[['phpstudy','Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader'],u'phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader'],
+
+    # CombineTxtToOneFile 合并文本到一个文件
+    CombineTxtToOneFile:[['CombineTxtToOneFile',],u'合并文本到一个文件'],
+
+    # ProfilerLuaMemory 获取一个lua 数据表所占用内存
+    ProfilerLuaMemory:[['ProfilerLuaMemory',],u'获取一个lua 数据表所占用内存'],
 }
 
 toolSets_old=toolSets

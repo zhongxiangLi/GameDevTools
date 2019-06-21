@@ -106,6 +106,13 @@ def ShowLogo(varToolTitle):
 def GetDirFromPath(varPath):
     return os.path.split(varPath)[0]
 
+# 获取父目录 文件的父目录就是文件所在目录 目录的父目录就是上一层目录
+def GetParentDirFromPath(varPath):
+    if os.path.isdir(varPath):
+        return os.path.dirname(os.path.dirname(varPath))
+    else:
+        return GetDirFromPath(varPath)
+
 # 获取文件名带后缀
 def GetFileNameFromPath(varPath):
     return os.path.split(varPath)[1]
@@ -160,4 +167,75 @@ def Archive_7z(varPath=""):
         os.system(tmpCommand)
         OpenDir(tmp7zFileDirPath)
 
+
+# 读取Txt,返回字符串
+def ReadTxtFileToStr(varTxtFilePath,varIgnore=False):
+    if varIgnore:
+        tmpTxtFile=codecs.open(varTxtFilePath,"r","utf-8",errors='ignore')
+    else:
+        tmpTxtFile=codecs.open(varTxtFilePath,"r","utf-8")
     
+    tmpStr=tmpTxtFile.read()
+    tmpTxtFile.close()
+    return tmpStr
+
+# 读取Txt,一行一行 返回数组
+def ReadTxtAllLineToArray(varFilePath,varIgnore=False):
+    if varIgnore:
+        tmpTxtFile=codecs.open(varFilePath,"r","utf-8",errors='ignore')
+    else:
+        tmpTxtFile=codecs.open(varFilePath,"r","utf-8")
+    tmpLines=tmpTxtFile.readlines()
+    tmpLines.extend("\n")
+    tmpTxtFile.close()
+    return tmpLines
+
+# 将字符串写入一个Txt
+def WriteStrToTxtFile(varStr,varTxtFilePath):
+    tmpTxtFile=codecs.open(varTxtFilePath,"w","utf-8",errors='ignore')
+    tmpTxtFile.write(varStr)
+    tmpTxtFile.close()
+
+# 将字符串数组写入到一个Txt
+def WriteLineArrayToTxtFile(varLineArray,varTxtFilePath):
+    for tmpIndex in range(len(varLineArray)):
+        varLineArray[tmpIndex]=Remove_r_n(varLineArray[tmpIndex])+"\n"
+    tmpTxtFile=codecs.open(varTxtFilePath,"w","utf-8",errors='ignore')
+    tmpTxtFile.writelines(varLineArray)
+    tmpTxtFile.close()
+
+# 合并一个文件夹的文本 到一个文本里，以文件夹名字命名，存放在文件夹同层目录。
+# 例如合并 C:/WorkSpace/Data 所有 lua 到 C:/WorkSpace/Data.lua。
+def CombineTxtToOneFile(varDirPath,varFileType):
+    tmPath=varDirPath
+    tmPath=tmPath.replace("\r","").replace("\n","")
+
+
+    tmpFileType=varFileType
+    tmpFileType=tmpFileType.replace("\r","").replace("\n","")
+
+    tmpCombineLineArray=[]
+
+    if os.path.isdir(tmPath):
+        tmPath=tmPath+"/"
+        tmpFilePathList=list_all_files(tmPath)
+        for tmpOneFilePath in tmpFilePathList:
+            if tmpOneFilePath.endswith(tmpFileType):
+                # print(u"[读取] "+tmpOneFilePath)
+                tmpOneTxtLines=ReadTxtAllLineToArray(tmpOneFilePath)
+                tmpCombineLineArray.extend(tmpOneTxtLines)
+
+    elif os.path.isfile(tmPath):
+        # print(u"路径错误，请输入文件夹路径\n")
+        return
+
+    
+    # print(tmpCombineLineArray)
+
+    tmpCombineTxtFilePath=os.path.dirname(tmPath)+varFileType
+
+    WriteLineArrayToTxtFile(tmpCombineLineArray,tmpCombineTxtFilePath)
+
+    # print(u"保存到:"+tmpCombineTxtFilePath)
+
+    return tmpCombineTxtFilePath

@@ -16,56 +16,14 @@ https://github.com/ThisisGame/GameDevTools/releases
 
 输入工具序号，即可使用工具
 
-# 新增工具
-在GameDevTools.py 注册新的工具 与 关键字
-
-```
-toolSets=\
-{
-    # 注册程序 与 关键字，关键字有多个
-    # Module:[['keyword1','keyword2'],'注释'],
-
-    # 获取文件MD5
-    GetFileMD5:[['md5','file md5','file'],u'获取文件MD5'],
-
-    # 获取字符串MD5
-    GetStrMD5:[['md5','string md5','string','str md5'],u'获取字符串MD5'],
-
-    # 获取 10位 Unix时间戳 单位秒
-    GetUnixTimeStamp:[['unix','time','timestamp'],u'获取 10位 Unix时间戳 单位秒'],
-
-    # 获取 13位 Unix时间戳 单位毫秒
-    GetUnixTimeStamp_ms:[['unix','time','timestamp','ms'],u'获取 13位 Unix时间戳 单位毫秒'],
-
-    # 一键生成Android、IOS 多尺寸Icon
-    MultiSizeIcon:[['icon','icon size'],u'一键生成Android、IOS 多尺寸Icon'],
-
-    # 简单http服务器
-    HttpServer:[['http','httpserver','http server'],u'简单http服务器'],
-
-    # telnet 测试端口是否开启
-    CheckServerPortOpen:[['telnet','checkserverportopen','port','network','server','net'],u'测试端口是否开启'],
-
-    # 解压ZIP
-    UnZipTools:[['zip','unzip','extra','extract'],u'解压ZIP'],
-
-    # Unicode 转 普通中文显示 \u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8 人生苦短，py是岸
-    UnicodeToChinese:[['unicode','gbk','chinese','\u','url','urlencode','code','codec'],u'Unicode 转 普通中文显示 \u4eba\u751f\u82e6\u77ed\uff0cpy\u662f\u5cb8 人生苦短，py是岸'],
-
-    # 屏幕录制Gif
-    ScreenCaptureGif:[['gif','screen','capture','rec','url','licecap','cap'],u'屏幕录制Gif'],
-
-    # Notepad 文本编辑器
-    Notepad:[['txt','exe','edit','note','notepad','text'],u'文本编辑器'],
-
-    # PNGoo PNG无损压缩
-    PNGoo_Win:[['png','compress','png compress','image','image compress','yasuo'],u'PNG无损压缩'],
-}
-```
 
 # 更新日志
 
 ```
+2019/6/21 ProfilerLuaMemory 获取一个lua 数据表所占用内存 关键词 ['ProfilerLuaMemory']
+
+2019/6/21 CombineTxtToOneFile 合并文本到一个文件 关键词 ['CombineTxtToOneFile']
+
 2019/6/15 phpStudy 2016版  集成最新的Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader 官网 http://phpstudy.php.cn/wenda/407.html
 
 2019/6/3 Win32DiskImager 写入ISO系统到U盘 树莓派安装系统 ,关键词 ['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi']
