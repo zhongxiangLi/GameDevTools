@@ -49,6 +49,7 @@ from Tools import Win32DiskImager
 from Tools import PhpStudy
 from Tools import CombineTxtToOneFile
 from Tools import ProfilerLuaMemory
+from Tools import FileZilla
 
 
 os.system("mode con cols=121 lines=35")
@@ -185,6 +186,9 @@ toolSets=\
 
     # ProfilerLuaMemory 获取一个lua 数据表所占用内存
     ProfilerLuaMemory:[['ProfilerLuaMemory',],u'获取一个lua 数据表所占用内存'],
+
+    # FileZilla FTP SFTP 文件上传下载工具
+    FileZilla:[['FileZilla® is a cross-platform FTP, SFTP, and FTPS client with a vast list of features, which supports Windows, Mac OS X, Linux, and more. ','download'],u'FTP SFTP 文件上传下载工具'],
 }
 
 toolSets_old=toolSets

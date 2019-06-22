@@ -26,3 +26,6 @@ python-3.7.3-embed-win32/Tools/phpStudy20161103/*
 
 python-3.7.3-embed-win32/Tools/lua.5.3.5.Debug/*
 !/python-3.7.3-embed-win32/Tools/lua.5.3.5.Debug/lua.exe
+
+python-3.7.3-embed-win32/Tools/FileZilla_3.42.1_win64/*
+!/python-3.7.3-embed-win32/Tools/FileZilla_3.42.1_win64/FileZilla_3.42.1_win64.7z

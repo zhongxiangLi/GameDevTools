@@ -20,6 +20,8 @@ https://github.com/ThisisGame/GameDevTools/releases
 # 更新日志
 
 ```
+2019/6/23 FileZilla FTP SFTP 文件上传下载工具 关键词 ['FileZilla FTP SFTP download']
+
 2019/6/21 ProfilerLuaMemory 获取一个lua 数据表所占用内存 关键词 ['ProfilerLuaMemory']
 
 2019/6/21 CombineTxtToOneFile 合并文本到一个文件 关键词 ['CombineTxtToOneFile']
