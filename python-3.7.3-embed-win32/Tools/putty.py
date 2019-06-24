@@ -6,7 +6,7 @@ import os
 def run():
     tmpExePath=os.getcwd()+"/Tools/putty/putty.exe"
     # print(tmpExePath)
-    os.system(tmpExePath)
+    os.system("start " + tmpExePath)
 
 if __name__=="__main__":
     run()
