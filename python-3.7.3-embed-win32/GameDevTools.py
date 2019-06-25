@@ -260,7 +260,15 @@ def searchKeyword(varKeyword):
 
 def sayHello():
     tmpKeyword=input("Search:")
-    searchKeyword(tmpKeyword.rstrip('\r'))
+    tmpKeyword=tmpKeyword.rstrip('\r')
+
+    if tmpKeyword.startswith(':'):
+        print(u"识别为控制台命令\n")
+
+        tmpBatPath=os.getcwd()+"/Tools/RunSystemCmd.bat"
+        os.system("start "+tmpBatPath+" "+tmpKeyword[1:])
+    else:
+        searchKeyword(tmpKeyword)
     print('\n\n')
         
     sayHello()

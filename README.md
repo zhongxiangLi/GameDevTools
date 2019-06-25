@@ -16,6 +16,19 @@ https://github.com/ThisisGame/GameDevTools/releases
 
 输入工具序号，即可使用工具
 
+tips:
+在 search 界面，输入 : 再输入系统命令，可以直接执行系统命令。
+
+例如:
+在search 界面输入
+
+```
+:ping www.baidu.com
+```
+
+即可执行 ping 百度的命令。
+
+
 
 # 更新日志
 
