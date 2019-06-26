@@ -50,6 +50,7 @@ from Tools import PhpStudy
 from Tools import CombineTxtToOneFile
 from Tools import ProfilerLuaMemory
 from Tools import FileZilla
+from Tools import Postman
 
 
 os.system("mode con cols=121 lines=35")
@@ -189,6 +190,9 @@ toolSets=\
 
     # FileZilla FTP SFTP 文件上传下载工具
     FileZilla:[['FileZilla® is a cross-platform FTP, SFTP, and FTPS client with a vast list of features, which supports Windows, Mac OS X, Linux, and more. ','download'],u'FTP SFTP 文件上传下载工具'],
+
+    # Postman HTTP requests  Get Post Patch Delete Put Postman是google开发的一款功能强大的网页调试与发送网页HTTP请求工具
+    Postman:[['Postman HTTP requests  Get Post Patch Delete Put',],u'google开发的一款功能强大的网页调试与发送网页HTTP请求工具'],
 }
 
 toolSets_old=toolSets

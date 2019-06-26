@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/6/26 Postman Postman是google开发的一款功能强大的网页调试与发送网页HTTP请求工具 关键词 ['Postman HTTP requests  Get Post Patch Delete Put']
+
 2019/6/23 FileZilla FTP SFTP 文件上传下载工具 关键词 ['FileZilla FTP SFTP download']
 
 2019/6/21 ProfilerLuaMemory 获取一个lua 数据表所占用内存 关键词 ['ProfilerLuaMemory']
