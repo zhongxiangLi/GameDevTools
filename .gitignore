@@ -12,7 +12,7 @@ python-3.7.3-embed-win32/Tools/ffmpeg/*
 !/python-3.7.3-embed-win32/Tools/ffmpeg/ffmpeg.zip
 *.pyc
 python-3.7.3-embed-win32/Tools/APKTool/*
-!/python-3.7.3-embed-win32/Tools/APKTool/APKTool.zip
+!/python-3.7.3-embed-win32/Tools/APKTool/APKTool.7z
 python-3.7.3-embed-win32/Tools/HarExport/Export
 python-3.7.3-embed-win32/Tools/Everything/*
 !/python-3.7.3-embed-win32/Tools/Everything/Everything-1.4.1.935.x64.zip
