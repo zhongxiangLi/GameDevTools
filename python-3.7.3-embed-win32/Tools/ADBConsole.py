@@ -15,7 +15,7 @@ def run():
         Helper.Ex_7z(tmpZipFilePath,False)
         print(u"解压完成\n")
 
-    tmpExePath=os.getcwd()+"/Tools/ADBConsole/ADBConsole/ADBConsole.exe"
+    tmpExePath=os.getcwd()+"/Tools/ADBConsole/ADBConsole/Start.bat"
     # print(tmpExePath)
     # Helper.OpenOneToolDir("Win32DiskImager/Win32DiskImager/")
     os.system("start "+tmpExePath)
