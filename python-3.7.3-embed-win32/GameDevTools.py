@@ -51,6 +51,7 @@ from Tools import CombineTxtToOneFile
 from Tools import ProfilerLuaMemory
 from Tools import FileZilla
 from Tools import Postman
+from Tools import ADBConsole
 
 
 os.system("mode con cols=121 lines=35")
@@ -193,6 +194,9 @@ toolSets=\
 
     # Postman HTTP requests  Get Post Patch Delete Put Postman是google开发的一款功能强大的网页调试与发送网页HTTP请求工具
     Postman:[['Postman HTTP requests  Get Post Patch Delete Put',],u'google开发的一款功能强大的网页调试与发送网页HTTP请求工具'],
+
+    # ADBConsole
+    ADBConsole:[['ADBConsole logcat android ddms'],u'查看Android手机Log的工具，再也不用打开AndroidStudio了'],
 }
 
 toolSets_old=toolSets
