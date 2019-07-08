@@ -33,6 +33,9 @@ tips:
 # 更新日志
 
 ```
+
+2019/7/8 FBX_Review 3d模型查看工具 Autodesk官方出品 关键词 ['FBX Review  3D model viewer,support .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.']
+
 2019/7/5 ADBConsole 查看Android手机Log的工具，再也不用打开AndroidStudio了 关键词 ['ADBConsole logcat android ddms']
 
 2019/6/26 Postman Postman是google开发的一款功能强大的网页调试与发送网页HTTP请求工具 关键词 ['Postman HTTP requests  Get Post Patch Delete Put']

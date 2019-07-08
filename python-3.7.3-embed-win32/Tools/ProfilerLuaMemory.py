@@ -9,7 +9,7 @@ import os
 
 def run():
     # print("to_JPG")
-    print(u"检测一个Lua数据表占用的内存\n\n")
+    print(u"检测一个Lua数据表占用的内存\nlua文件不能太大，90m的文件就会出错，可以分成多个文件.\n\n")
 
     tmPath=str(input(u"输入lua路径:"))
     tmPath=tmPath.replace("\r","").replace("\n","")

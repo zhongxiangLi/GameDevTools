@@ -35,11 +35,17 @@ def DownLoad(varUrl,varSavePath):
 def OpenOneToolDir(varDir):
     tmpExePath=os.getcwd()+"/Tools/"+varDir
     # print(tmpExePath)
-    os.system('start '+tmpExePath)
+    os.system('start explorer '+tmpExePath)
 
 # 打开目录
 def OpenDir(varDir):
-    os.system('start '+varDir)
+    print("OpenDir:"+varDir)
+    if ' ' in varDir:#目录有空格
+        if varDir.startswith('"')==False:#目录非 双引号开头
+            varDir='"'+varDir
+        if varDir.endswith('"')==False:#目录非 双引号开头
+            varDir=varDir+'"'
+    os.system('start explorer '+varDir)
 
 
 # if __name__=="__main__":
@@ -133,9 +139,11 @@ def ChangePathExt(varPath,varExt):
 
 # 7z解压,传入7z文件路径，解压目录
 def Ex_7z(var7zFilePath,varOpenDir=True):
+    tmpPath=var7zFilePath.replace('"','')
+
     tmp7zExePath=os.getcwd()+"/Tools/7z/7za.exe"
-    tmpExDirPath=GetDirFromPath(var7zFilePath)
-    tmpCommand=tmp7zExePath+" x "+var7zFilePath+" -o"+tmpExDirPath
+    tmpExDirPath=GetDirFromPath(tmpPath)
+    tmpCommand=tmp7zExePath+" x \""+tmpPath+"\" -o\""+tmpExDirPath+"\""
     print(tmpCommand)
     os.system(tmpCommand)
     if varOpenDir:
@@ -143,26 +151,30 @@ def Ex_7z(var7zFilePath,varOpenDir=True):
 
 # 7z压缩,传入目录
 def Archive_7z(varPath=""):
+    print("path:" + varPath+"\n")
     tmp7zExePath=os.getcwd()+"/Tools/7z/7za.exe"
 
-    if os.path.isdir(varPath):
-        if varPath.endswith('/') or varPath.endswith('\\'):
-            varPath=varPath[0:-1]
-            if varPath.endswith('/') or varPath.endswith('\\'):
-                varPath=varPath[0:-1]
-        print(varPath)
+    tmpPath=varPath.replace('"','')
+    if os.path.isdir(tmpPath):
+        print("is dir\n")
+        if tmpPath.endswith('/') or tmpPath.endswith('\\'):
+            tmpPath=tmpPath[0:-1]
+            if tmpPath.endswith('/') or tmpPath.endswith('\\'):
+                tmpPath=tmpPath[0:-1]
+        print(tmpPath)
 
         
-        tmp7zFilePath=ChangePathExt(varPath,".7z")
+        tmp7zFilePath=ChangePathExt(tmpPath,".7z")
         tmp7zFileDirPath=GetDirFromPath(tmp7zFilePath)
-        tmpCommand=tmp7zExePath+" a -t7z "+tmp7zFilePath+" "+varPath+"\\* -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
+        tmpCommand=tmp7zExePath+" a -t7z \""+tmp7zFilePath+"\" \""+tmpPath+"\"\\ -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
         print(tmpCommand)
         os.system(tmpCommand)
         OpenDir(tmp7zFileDirPath)
-    elif os.path.isfile(varPath):
+    elif os.path.isfile(tmpPath):
+        print("is file\n")
         tmp7zFilePath=ChangePathExt(varPath,".7z")
         tmp7zFileDirPath=GetDirFromPath(tmp7zFilePath)
-        tmpCommand=tmp7zExePath+" a -t7z "+tmp7zFilePath+" "+varPath+" -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
+        tmpCommand=tmp7zExePath+" a -t7z \""+tmp7zFilePath+"\" \""+tmpPath+"\" -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on"
         print(tmpCommand)
         os.system(tmpCommand)
         OpenDir(tmp7zFileDirPath)

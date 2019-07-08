@@ -32,3 +32,6 @@ python-3.7.3-embed-win32/Tools/FileZilla_3.42.1_win64/*
 
 python-3.7.3-embed-win32/Tools/ADBConsole/*
 !/python-3.7.3-embed-win32/Tools/ADBConsole/ADBConsole.7z
+
+python-3.7.3-embed-win32/Tools/FBX Review/*
+!/python-3.7.3-embed-win32/Tools/FBX Review/FBX Review.7z

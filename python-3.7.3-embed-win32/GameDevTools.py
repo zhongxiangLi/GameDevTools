@@ -52,6 +52,9 @@ from Tools import ProfilerLuaMemory
 from Tools import FileZilla
 from Tools import Postman
 from Tools import ADBConsole
+from Tools import ConvertLuaDicsToList
+from Tools import LuaInPython
+from Tools import FBX_Review
 
 
 os.system("mode con cols=121 lines=35")
@@ -197,6 +200,15 @@ toolSets=\
 
     # ADBConsole
     ADBConsole:[['ADBConsole logcat android ddms'],u'查看Android手机Log的工具，再也不用打开AndroidStudio了'],
+
+    # ConvertLuaDicsToList
+    ConvertLuaDicsToList:[['ConvertLuaDicsToList'],u'转换Lua字典形式的数据表为数组形式数据表'],
+
+    # LuaInPython
+    LuaInPython:[['LuaInPython'],u'Python调用lua'],
+
+    # FBX_Review 3d模型查看工具 Autodesk官方出品
+    FBX_Review:[['FBX Review A cross-platform 3D model viewer,Open files in a variety of common 3D formats to help improve the speed of asset review: .zip, .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.'],u'3d模型查看工具 Autodesk官方出品'],
 }
 
 toolSets_old=toolSets
