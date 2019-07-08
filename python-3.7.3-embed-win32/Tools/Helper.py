@@ -251,3 +251,6 @@ def CombineTxtToOneFile(varDirPath,varFileType):
     # print(u"保存到:"+tmpCombineTxtFilePath)
 
     return tmpCombineTxtFilePath
+
+def ShowReadme(varStr):
+    print(u"软件使用说明："+varStr+"\n")

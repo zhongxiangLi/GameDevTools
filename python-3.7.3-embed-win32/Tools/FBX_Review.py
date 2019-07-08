@@ -16,7 +16,8 @@ def run():
         print(u"解压完成\n")
 
     tmpExePath='"'+os.getcwd()+"\\Tools\\FBX Review\\FBX Review\\Start.bat"+'"'
-    print(tmpExePath)
+    #print(tmpExePath)
+    Helper.ShowReadme(u"右键显示/隐藏菜单")
     # Helper.OpenOneToolDir("Win32DiskImager/Win32DiskImager/")
     os.system(tmpExePath)
     
