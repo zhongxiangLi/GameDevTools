@@ -55,6 +55,7 @@ from Tools import ADBConsole
 from Tools import ConvertLuaDicsToList
 from Tools import LuaInPython
 from Tools import FBX_Review
+from Tools import Excel_to_lua
 
 
 os.system("mode con cols=121 lines=35")
@@ -209,6 +210,9 @@ toolSets=\
 
     # FBX_Review 3d模型查看工具 Autodesk官方出品
     FBX_Review:[['FBX Review A cross-platform 3D model viewer,Open files in a variety of common 3D formats to help improve the speed of asset review: .zip, .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.'],u'3d模型查看工具 Autodesk官方出品'],
+
+    # Excel_to_lua
+    Excel_to_lua:[['Excel_to_lua'],u'Excel 转 lua'],
 }
 
 toolSets_old=toolSets

@@ -253,4 +253,12 @@ def CombineTxtToOneFile(varDirPath,varFileType):
     return tmpCombineTxtFilePath
 
 def ShowReadme(varStr):
-    print(u"软件使用说明："+varStr+"\n")
+    print(u"软件使用说明：\n"+varStr+"\n")
+
+#字符串转数字,错误返回默认值
+def String_to_int(varStr,varDefault=0):
+    tmpStr=""
+    tmpStr=Remove_r_n(varStr)
+    if varStr.isdigit():
+        return int(tmpStr)
+    return varDefault
