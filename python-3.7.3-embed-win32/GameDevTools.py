@@ -56,6 +56,7 @@ from Tools import ConvertLuaDicsToList
 from Tools import LuaInPython
 from Tools import FBX_Review
 from Tools import Excel_to_lua
+from Tools import puttygen
 
 
 os.system("mode con cols=121 lines=35")
@@ -213,6 +214,9 @@ toolSets=\
 
     # Excel_to_lua
     Excel_to_lua:[['Excel_to_lua'],u'Excel 转 lua'],
+
+    # puttygen
+    puttygen:[['puttygen is a RSA and DSA key generation utility','miyue','miyao','disable ssh use rsa key login'],u'生成RSA、DSA公钥私钥的密钥工具'],
 }
 
 toolSets_old=toolSets
