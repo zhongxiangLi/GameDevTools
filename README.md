@@ -33,6 +33,10 @@ tips:
 # 更新日志
 
 ```
+2019/7/10 QRcodeGen 生成二维码图片 关键词 ['QRcodeGen','erweima']
+
+2019/7/10 ChangeFileExt 批量修改文件后缀，例如JPG改jpg 关键词 ['ChangeFileExt','changefiletypeextension']
+
 2019/7/10 puttygen 生成RSA、DSA公钥私钥的密钥工具 关键词 ['puttygen is a RSA and DSA key generation utility']
 
 2019/7/9 Excel_to_lua Excel转lua工具 关键词 ['Excel_to_lua']
