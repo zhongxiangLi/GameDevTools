@@ -57,6 +57,8 @@ from Tools import LuaInPython
 from Tools import FBX_Review
 from Tools import Excel_to_lua
 from Tools import puttygen
+from Tools import QRcodeGen
+from Tools import ChangeFileExt
 
 
 os.system("mode con cols=121 lines=35")
@@ -217,6 +219,12 @@ toolSets=\
 
     # puttygen
     puttygen:[['puttygen is a RSA and DSA key generation utility','miyue','miyao','disable ssh use rsa key login'],u'生成RSA、DSA公钥私钥的密钥工具'],
+
+    # QRcodeGen
+    QRcodeGen:[['QRcodeGen'],u'生成二维码图片'],
+
+    # QRcodeGen
+    ChangeFileExt:[['ChangeFileExt'],u'批量修改文件后缀，例如JPG改jpg'],
 }
 
 toolSets_old=toolSets

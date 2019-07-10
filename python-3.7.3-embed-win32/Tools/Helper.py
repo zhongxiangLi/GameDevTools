@@ -262,3 +262,7 @@ def String_to_int(varStr,varDefault=0):
     if varStr.isdigit():
         return int(tmpStr)
     return varDefault
+
+#传入文件名，拼接cache目录
+def GetCacheDir_FilePath(varFileName):
+    return os.getcwd()+"/cache/"+varFileName
