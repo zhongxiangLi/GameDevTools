@@ -33,6 +33,10 @@ tips:
 # 更新日志
 
 ```
+2019/7/11 PVRShaderEditor Shader代码编辑器，具有错误检查、代码高亮功能 关键词 ['PVRShaderEditor is shader code editor,support code highlight,error check']
+
+2019/7/11 PVRTexTool 贴图压缩工具，PNG压缩成ETC、PVR等格式 关键词 ['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)']
+
 2019/7/10 QRcodeGen 生成二维码图片 关键词 ['QRcodeGen','erweima']
 
 2019/7/10 ChangeFileExt 批量修改文件后缀，例如JPG改jpg 关键词 ['ChangeFileExt','changefiletypeextension']

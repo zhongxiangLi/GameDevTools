@@ -38,3 +38,7 @@ python-3.7.4-embed-amd64/Tools/FBX Review/*
 
 python-3.7.4-embed-amd64/cache/*
 !/python-3.7.4-embed-amd64/cache/cache
+
+python-3.7.4-embed-amd64/Tools/Imagination/PowerVR_Graphics/PowerVR_Tools/*
+!/python-3.7.4-embed-amd64/Tools/Imagination/PowerVR_Graphics/PowerVR_Tools/PVRShaderEditor.7z
+!/python-3.7.4-embed-amd64/Tools/Imagination/PowerVR_Graphics/PowerVR_Tools/PVRTexTool.7z
