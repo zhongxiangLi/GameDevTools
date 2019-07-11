@@ -229,7 +229,7 @@ toolSets=\
     ChangeFileExt:[['ChangeFileExt','changefiletypeextension'],u'批量修改文件后缀，例如JPG改jpg'],
 
     # PVRTexTool
-    PVRTexTool:[['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)'],u'贴图压缩工具，PNG压缩成ETC、PVR等格式'],
+    PVRTexTool:[['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)','Mali Texture Compression Tool'],u'贴图压缩工具，PNG压缩成ETC、PVR等格式'],
 
     #PVRShaderEditor
     PVRShaderEditor:[['PVRShaderEditor is shader code editor,support code highlight,error check'],u'Shader代码编辑器，具有错误检查、代码高亮功能'],
