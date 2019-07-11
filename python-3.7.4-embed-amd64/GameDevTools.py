@@ -61,6 +61,7 @@ from Tools import QRcodeGen
 from Tools import ChangeFileExt
 from Tools import PVRTexTool
 from Tools import PVRShaderEditor
+from Tools import FilePathNotOnlyEnglish
 
 
 os.system("mode con cols=121 lines=35")
@@ -233,6 +234,9 @@ toolSets=\
 
     #PVRShaderEditor
     PVRShaderEditor:[['PVRShaderEditor is shader code editor,support code highlight,error check'],u'Shader代码编辑器，具有错误检查、代码高亮功能'],
+
+    # FilePathNotOnlyEnglish
+    FilePathNotOnlyEnglish:[['FilePathNotOnlyEnglish check chinese filename or other not english language character'],u'检测文件名或路径是否包含中文或其他非英文字符'],
 }
 
 toolSets_old=toolSets

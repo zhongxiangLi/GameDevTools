@@ -267,3 +267,17 @@ def String_to_int(varStr,varDefault=0):
 #传入文件名，拼接cache目录
 def GetCacheDir_FilePath(varFileName):
     return os.getcwd()+"/cache/"+varFileName
+
+#判断是否含有中文
+def StringHaveChinese(varStr):
+    for c in varStr:
+        if '\u4e00' <= c <= '\u9fa5':
+            return True
+    return False
+
+#判断是否只含有英文字符
+def StringOnlyEnglish(varStr):
+    for c in varStr:
+        if ord(c) > 255:
+            return False
+    return True

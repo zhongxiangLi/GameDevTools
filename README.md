@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/7/11 FilePathNotOnlyEnglish 检测文件名或路径是否包含中文或其他非英文字符 关键词 ['FilePathNotOnlyEnglish check chinese filename or other not english language character']
+
 2019/7/11 PVRShaderEditor Shader代码编辑器，具有错误检查、代码高亮功能 关键词 ['PVRShaderEditor is shader code editor,support code highlight,error check']
 
 2019/7/11 PVRTexTool 贴图压缩工具，PNG压缩成ETC、PVR等格式 关键词 ['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)']
