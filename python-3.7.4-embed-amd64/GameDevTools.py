@@ -62,6 +62,7 @@ from Tools import ChangeFileExt
 from Tools import PVRTexTool
 from Tools import PVRShaderEditor
 from Tools import FilePathNotOnlyEnglish
+from Tools import TextAnalysisTool
 
 
 os.system("mode con cols=121 lines=35")
@@ -237,6 +238,9 @@ toolSets=\
 
     # FilePathNotOnlyEnglish
     FilePathNotOnlyEnglish:[['FilePathNotOnlyEnglish check chinese filename or other not english language character'],u'检测文件名或路径是否包含中文或其他非英文字符'],
+
+    # TextAnalysisTool
+    TextAnalysisTool:[['TextAnalysisTool.NET','android logcat search by tag'],u'看log神器，根据指定内容过滤'],
 }
 
 toolSets_old=toolSets
