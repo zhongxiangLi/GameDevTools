@@ -306,11 +306,41 @@ def searchKeyword(varKeyword):
             print(ex)
             sayHello()
 
+
+#统计现有linux命令
+linuxcommands=Helper.list_all_file_name_in_one_dir(os.getcwd()+"/Tools/linuxcommand/usr/bin",".exe",True)
+# print(linuxcommands)
+
+# 运行Linux命令
+def RunLinuxCmd(varKeyword):
+    # tmpLinuxCommand=""
+    tmpLinuxCommand=varKeyword[2:]
+    tmpParts=tmpLinuxCommand.partition(' ')
+    tmpLinuxCommand=str(tmpParts[0])
+
+    print(u"识别为linux命令 "+tmpLinuxCommand+"\n")
+    # 查找是否有这个命令对应的exe,Tools\linuxcommand\usr\bin这个目录里面
+    if tmpLinuxCommand in linuxcommands:
+        tmpBatPath=os.getcwd()+"/Tools/RunLinuxCmd.bat"
+        os.system("start "+tmpBatPath+" "+varKeyword[2:])
+    else:
+        varSimilarStrList=Helper.GetSimilarStrsFromList(linuxcommands,tmpLinuxCommand)
+        if len(varSimilarStrList)>0:
+            print(u"错误，以下可用\n")
+            print(varSimilarStrList)
+        else:
+            print(u"没有找到这个命令\n")
+
+    
+    
+
 def sayHello():
-    tmpKeyword=input("Search:")
+    tmpKeyword=input("[Search]$")
     tmpKeyword=tmpKeyword.rstrip('\r')
 
-    if tmpKeyword.startswith(':'):
+    if tmpKeyword.startswith('::'):
+        RunLinuxCmd(tmpKeyword)
+    elif tmpKeyword.startswith(':'):
         print(u"识别为控制台命令\n")
 
         tmpBatPath=os.getcwd()+"/Tools/RunSystemCmd.bat"
@@ -322,5 +352,5 @@ def sayHello():
     sayHello()
 
 if __name__=="__main__":
-    print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n')
+    print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n\n冒号+命令=Win命令，   :ping www.baidu.com  识别为ping命令\n2个冒号+命令=linux命令， ::ssh-keygen 识别为linux的ssh-keygen命令\n')
     sayHello()

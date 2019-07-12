@@ -67,8 +67,10 @@ def InstallModule(varModuleName):
     os.system('pip install '+varModuleName)
     print('Pillow install finish')
 
-# 获取目录文件列表 包括子目录
-def list_all_files(rootdir):
+# 获取目录文件列表 包括子目录,可以传入指定后缀 .lua
+# @@param rootdir:指定搜索目录
+# @@param ext:指定文件后缀
+def list_all_files(rootdir,ext=".*"):
     import os
     _files = []
     list = os.listdir(rootdir) #列出文件夹下所有的目录与文件
@@ -77,8 +79,31 @@ def list_all_files(rootdir):
            if os.path.isdir(path):
               _files.extend(list_all_files(path))
            if os.path.isfile(path):
-              _files.append(path)
+                if ext==".*":
+                    _files.append(path)
+                elif path.endswith(ext):
+                    _files.append(path)
     return _files
+
+#返回目录中文件名列表，不包含路径，只有文件名
+# @@param rootdir:指定搜索目录
+# @@param ext:指定文件后缀
+# @@param removeext:是否去除后缀，只留文件名 
+def list_all_file_name_in_one_dir(rootdir,ext=".*",removeext=False):
+    import os
+    _filenames = []
+    list = os.listdir(rootdir) #列出文件夹下所有的目录与文件
+    for i in range(0,len(list)):
+           path = os.path.join(rootdir,list[i])
+           if os.path.isfile(path):
+                if removeext:
+                    list[i]=GetFileNameWithoutExtFromPath(list[i])
+                if ext==".*":
+                    _filenames.append(list[i])
+                elif path.endswith(ext):
+                    _filenames.append(list[i])
+    return _filenames
+
 
 def getUnixPath(varpath):
     return varpath.replace('\\\\','/').replace('\\','/')
@@ -281,3 +306,13 @@ def StringOnlyEnglish(varStr):
         if ord(c) > 255:
             return False
     return True
+
+#从列表中获取 与 指定字符串 类似的字符串，返回一个列表
+def GetSimilarStrsFromList(varList,varStr=""):
+    varStr=varStr.lower()
+    varSimilarStrList=[]
+    for tmpOneStr in varList:
+        if varStr in tmpOneStr.lower():
+            varSimilarStrList.append(tmpOneStr)
+
+    return varSimilarStrList
