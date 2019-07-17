@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/7/17 GetMyIPLocation 获取自己的外网IP以及定位 关键词 ['get my compute ip address and gps location']
+
 2019/7/12 TextAnalysisTool 看log神器，根据指定内容过滤 关键词 ['TextAnalysisTool.NET','android logcat search by tag']
 
 2019/7/11 FilePathNotOnlyEnglish 检测文件名或路径是否包含中文或其他非英文字符 关键词 ['FilePathNotOnlyEnglish check chinese filename or other not english language character']

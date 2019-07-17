@@ -21,6 +21,27 @@ def CheckUrl_Http_Https(varUrl):
     else:
         return False
 
+
+
+# 获取网页源码
+def GetHtml(varUrl):
+    if CheckUrl_Http_Https(varUrl):
+        print(u"GetHtml:"+varUrl)
+        varUrl=Remove_r_n(varUrl)
+
+        try:
+            tmpresponse=request.urlopen(varUrl)
+            tmpStr= tmpresponse.read()
+            return tmpStr
+        except:
+            return False
+    else:
+        print(STR_INVALID_URL)
+        return False
+
+def GetHtml_UTF_8(varUrl):
+    return str(GetHtml(varUrl),'utf-8')
+
 # 下载文件 返回 True False代表Url是否合法
 def DownLoad(varUrl,varSavePath):
     if CheckUrl_Http_Https(varUrl):
