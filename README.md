@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/7/17 GetIPLocation 获取IP所在地区位置 关键词 ['get ip address  gps location']
+
 2019/7/17 GetMyIPLocation 获取自己的外网IP以及定位 关键词 ['get my compute ip address and gps location']
 
 2019/7/12 TextAnalysisTool 看log神器，根据指定内容过滤 关键词 ['TextAnalysisTool.NET','android logcat search by tag']

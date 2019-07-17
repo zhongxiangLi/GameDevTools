@@ -64,6 +64,7 @@ from Tools import PVRShaderEditor
 from Tools import FilePathNotOnlyEnglish
 from Tools import TextAnalysisTool
 from Tools import GetMyIPLocation
+from Tools import GetIPLocation
 
 
 os.system("mode con cols=121 lines=35")
@@ -244,7 +245,11 @@ toolSets=\
     TextAnalysisTool:[['TextAnalysisTool.NET','android logcat search by tag'],u'看log神器，根据指定内容过滤'],
 
     # GetMyIPLocation
-    GetMyIPLocation:[['get my compute ip address and gps location'],u'获取自己的外网IP以及定位'],
+    GetMyIPLocation:[['get my compute ip address and gps location'],u'获取自己的外网IP以及所在地区位置'],
+
+    # GetIPLocation
+    GetIPLocation:[['get ip address/domain gps location'],u'获取IP/域名所在地区位置'],
+
 }
 
 toolSets_old=toolSets

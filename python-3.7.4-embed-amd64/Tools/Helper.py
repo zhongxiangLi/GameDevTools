@@ -4,6 +4,7 @@ import os
 import urllib 
 import codecs
 from urllib import request
+import requests
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -23,7 +24,7 @@ def CheckUrl_Http_Https(varUrl):
 
 
 
-# 获取网页源码
+# 获取网页源码,不能带参数
 def GetHtml(varUrl):
     if CheckUrl_Http_Https(varUrl):
         print(u"GetHtml:"+varUrl)
@@ -33,7 +34,8 @@ def GetHtml(varUrl):
             tmpresponse=request.urlopen(varUrl)
             tmpStr= tmpresponse.read()
             return tmpStr
-        except:
+        except ex:
+            print(ex)
             return False
     else:
         print(STR_INVALID_URL)
@@ -41,6 +43,9 @@ def GetHtml(varUrl):
 
 def GetHtml_UTF_8(varUrl):
     return str(GetHtml(varUrl),'utf-8')
+
+def GetHtml_GBK(varUrl):
+    return str(GetHtml(varUrl),'gbk')
 
 # 下载文件 返回 True False代表Url是否合法
 def DownLoad(varUrl,varSavePath):
