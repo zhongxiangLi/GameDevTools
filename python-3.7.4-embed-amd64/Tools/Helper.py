@@ -5,6 +5,7 @@ import urllib
 import codecs
 from urllib import request
 import requests
+import time
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -342,3 +343,15 @@ def GetSimilarStrsFromList(varList,varStr=""):
             varSimilarStrList.append(tmpOneStr)
 
     return varSimilarStrList
+
+#输出毫秒时间戳
+def PrintUnixTimeStamp_ms():
+    now = time.time()
+    now = (int(now * 1000))#python3 只有int代表整形 没有long
+    print(now)
+
+#获取毫秒时间戳
+def GetUnixTimeStamp_ms():
+    now = time.time()
+    now = (int(now * 1000))#python3 只有int代表整形 没有long
+    return now

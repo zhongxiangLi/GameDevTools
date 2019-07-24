@@ -3,9 +3,13 @@
 import os
 print(os.getcwd())
 os.chdir(os.getcwd())
+from Tools import ProfilerTime
 
+ProfilerTime.BeginSample("import")
 from Tools import Helper
-Helper.Checkpip()
+#Helper.Checkpip()
+
+
 
 from Tools import GetFileMD5
 from Tools import GetStrMD5
@@ -66,10 +70,11 @@ from Tools import TextAnalysisTool
 from Tools import GetMyIPLocation
 from Tools import GetIPLocation
 
+tmpInitCostTime=ProfilerTime.EndSample()
 
 os.system("mode con cols=121 lines=35")
 
-HarExport.Helper.ShowLogo("游戏开发 工具套装")
+HarExport.Helper.ShowLogo("游戏开发 工具套装\n启动耗时:"+str(tmpInitCostTime))
 
 toolSets=\
 {
