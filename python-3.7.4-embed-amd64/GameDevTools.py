@@ -69,6 +69,7 @@ from Tools import FilePathNotOnlyEnglish
 from Tools import TextAnalysisTool
 from Tools import GetMyIPLocation
 from Tools import GetIPLocation
+from Tools import advanced_ip_scanner
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -254,6 +255,9 @@ toolSets=\
 
     # GetIPLocation
     GetIPLocation:[['get ip address/domain gps location'],u'获取IP/域名所在地区位置'],
+
+    # advanced_ip_scanner
+    advanced_ip_scanner:[['advanced_ip_scanner scan lan ip,get port status and network card info'],u'扫描指定网段IP，获取开放端口、网卡信息'],
 
 }
 

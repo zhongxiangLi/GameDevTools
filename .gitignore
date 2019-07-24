@@ -45,3 +45,6 @@ python-3.7.4-embed-amd64/Tools/Imagination/PowerVR_Graphics/PowerVR_Tools/*
 
 python-3.7.4-embed-amd64/Tools/TextAnalysisTool.NET/*
 !/python-3.7.4-embed-amd64/Tools/TextAnalysisTool.NET/TextAnalysisTool.NET.7z
+
+python-3.7.4-embed-amd64/Tools/advanced_ip_scanner/*
+!/python-3.7.4-embed-amd64/Tools/advanced_ip_scanner/advanced_ip_scanner.7z
