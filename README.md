@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/7/31 mysql_to_lua 导出Mysql表数据为lua脚本 关键词 ['mysql_to_lua']
+
 2019/7/24 advanced_ip_scanner 扫描指定网段IP，获取开放端口、网卡信息 关键词 ['advanced_ip_scanner scan lan ip,get port status and network card info']
 
 2019/7/17 GetIPLocation 获取IP所在地区位置 关键词 ['get ip address  gps location']

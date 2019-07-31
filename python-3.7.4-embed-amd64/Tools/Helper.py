@@ -355,3 +355,11 @@ def GetUnixTimeStamp_ms():
     now = time.time()
     now = (int(now * 1000))#python3 只有int代表整形 没有long
     return now
+
+#获取软件配置文件存放目录,带 / ;
+def GetSystemAppDataDirPath():
+    tmpAppData_Path=os.getenv('LOCALAPPDATA') # C:\Users\Administrator\AppData\Local
+    tmpPath=tmpAppData_Path+"\\GameDevTools\\"
+    if os.path.exists(tmpPath)==False:
+        os.mkdir(tmpPath)
+    return tmpPath+"/"

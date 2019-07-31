@@ -3,6 +3,7 @@
 import os
 print(os.getcwd())
 os.chdir(os.getcwd())
+import sys
 from Tools import ProfilerTime
 
 ProfilerTime.BeginSample("import")
@@ -70,6 +71,7 @@ from Tools import TextAnalysisTool
 from Tools import GetMyIPLocation
 from Tools import GetIPLocation
 from Tools import advanced_ip_scanner
+from Tools import mysql_to_lua
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -259,6 +261,8 @@ toolSets=\
     # advanced_ip_scanner
     advanced_ip_scanner:[['advanced_ip_scanner scan lan ip,get port status and network card info'],u'扫描指定网段IP，获取开放端口、网卡信息'],
 
+    # mysql_to_lua
+    mysql_to_lua:[['mysql_to_lua'],u'导出Mysql表数据为lua脚本'],
 }
 
 toolSets_old=toolSets
@@ -320,13 +324,22 @@ def searchKeyword(varKeyword):
     if tmpIndexStr=="":
         sayHello()
     else:
+        tmpIndex=int(tmpIndexStr)
+        if tmpIndex>(len(tmpTools_for_Search)-1):
+            searchKeyword(varKeyword)
+            return
+        print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
+
         try:
-            tmpIndex=int(tmpIndexStr)
-            print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
             tmpTools_for_Search[tmpIndex].run()
-        except ex:
-            print(ex)
-            sayHello()
+        except:
+            print("Unexpected error:", sys.exc_info())
+            tmpTools_for_Search[tmpIndex].run()
+        return
+        
+            
+        
+
 
 
 #统计现有linux命令
@@ -375,4 +388,7 @@ def sayHello():
 
 if __name__=="__main__":
     print(u'tips:\n比如我想查找打图集工具，关键词 texturepacker。\n那么输入 texture 或者 pack 或者 tex ，只要输入关键词部分字母 即可查找。\n\n冒号+命令=Win命令，   :ping www.baidu.com  识别为ping命令\n2个冒号+命令=linux命令， ::ssh-keygen 识别为linux的ssh-keygen命令\n')
+    
     sayHello()
+
+    
