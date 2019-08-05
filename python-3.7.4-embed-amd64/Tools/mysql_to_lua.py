@@ -92,6 +92,9 @@ def Export_Mysql_to_Lua(varIP,varUser,varPasswd,varDBName,varSaveDirPath,varPort
         # print(tmpTableNameList)
         #END
 
+        #生成文件列表
+        tmpluaFileList="TypeDB=\n{\n"
+
         #BEGIN 导出
         for tmpTableName in tmpTableNameList:
                 tmpTableName=tmpTableName[0]
@@ -163,12 +166,18 @@ def Export_Mysql_to_Lua(varIP,varUser,varPasswd,varDBName,varSaveDirPath,varPort
                                 tmpRowLuaStr="    ["+str(tmpTableColumnDataPrimary)+"]="+tmpRowLuaStr
 
                         tmpTableLuaStr=tmpTableLuaStr+tmpRowLuaStr
-                tmpTableLuaStr=tmpTableLuaStr+"}\n"
+                tmpTableLuaStr=tmpTableLuaStr+"}\nreturn "+tmpTableName
                 # print(tmpTableLuaStr)
                 Helper.WriteStrToTxtFile(tmpTableLuaStr,varSaveDirPath+"/"+tmpTableName+".lua")
                 # break
+
+                tmpluaFileList=tmpluaFileList+"    "+tmpTableName+"='./server/public/typedb/"+tmpTableName+".lua',\n"
+
         #END
         
+        tmpluaFileList=tmpluaFileList+"}\nreturn TypeDB"
+        Helper.WriteStrToTxtFile(tmpluaFileList,varSaveDirPath+"/TypeDB.lua")
+
         # 关闭数据库连接
         db.close()
 
