@@ -6,6 +6,8 @@ import codecs
 from urllib import request
 import requests
 import time
+import subprocess
+import sys
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -363,3 +365,15 @@ def GetSystemAppDataDirPath():
     if os.path.exists(tmpPath)==False:
         os.mkdir(tmpPath)
     return tmpPath+"/"
+
+# 运行控制台程序，并获取输出
+def RunShellWithReturnCode(command,universal_newlines=True):
+    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, universal_newlines=universal_newlines)
+
+    output = p.stdout.read()
+    p.wait()
+    errout = p.stderr.read()
+
+    p.stdout.close()
+    p.stderr.close()
+    return output, p.returncode

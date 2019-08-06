@@ -72,6 +72,7 @@ from Tools import GetMyIPLocation
 from Tools import GetIPLocation
 from Tools import advanced_ip_scanner
 from Tools import mysql_to_lua
+from Tools import ConvertTxtEncoding
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -263,6 +264,9 @@ toolSets=\
 
     # mysql_to_lua
     mysql_to_lua:[['mysql_to_lua'],u'导出Mysql表数据为lua脚本'],
+
+    #ConvertTxtEncoding
+    ConvertTxtEncoding:[['ConvertTxtEncoding'],u'转换文本文件编码'],
 }
 
 toolSets_old=toolSets
