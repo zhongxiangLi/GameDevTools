@@ -72,7 +72,7 @@ from Tools import GetMyIPLocation
 from Tools import GetIPLocation
 from Tools import advanced_ip_scanner
 from Tools import mysql_to_lua
-from Tools import ConvertTxtEncoding
+from Tools import GBK_to_UTF8
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -265,8 +265,8 @@ toolSets=\
     # mysql_to_lua
     mysql_to_lua:[['mysql_to_lua'],u'导出Mysql表数据为lua脚本'],
 
-    #ConvertTxtEncoding
-    ConvertTxtEncoding:[['ConvertTxtEncoding'],u'转换文本文件编码'],
+    #GBK_to_UTF8
+    GBK_to_UTF8:[['GBK_to_UTF8 convert(encode) from gbk encoding to utf8'],u'转换文本文件编码GBK-->UTF8'],
 }
 
 toolSets_old=toolSets

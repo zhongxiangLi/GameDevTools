@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/8/21 GBK_to_UTF8 转换文本文件编码GBK-->UTF8 关键词 ['GBK_to_UTF8 convert(encode) from gbk encoding to utf8']
+
 2019/7/31 mysql_to_lua 导出Mysql表数据为lua脚本 关键词 ['mysql_to_lua']
 
 2019/7/24 advanced_ip_scanner 扫描指定网段IP，获取开放端口、网卡信息 关键词 ['advanced_ip_scanner scan lan ip,get port status and network card info']
