@@ -5,6 +5,9 @@ import urllib
 import codecs
 from urllib import request
 import requests
+import time
+import subprocess
+import sys
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -342,3 +345,35 @@ def GetSimilarStrsFromList(varList,varStr=""):
             varSimilarStrList.append(tmpOneStr)
 
     return varSimilarStrList
+
+#输出毫秒时间戳
+def PrintUnixTimeStamp_ms():
+    now = time.time()
+    now = (int(now * 1000))#python3 只有int代表整形 没有long
+    print(now)
+
+#获取毫秒时间戳
+def GetUnixTimeStamp_ms():
+    now = time.time()
+    now = (int(now * 1000))#python3 只有int代表整形 没有long
+    return now
+
+#获取软件配置文件存放目录,带 / ;
+def GetSystemAppDataDirPath():
+    tmpAppData_Path=os.getenv('LOCALAPPDATA') # C:\Users\Administrator\AppData\Local
+    tmpPath=tmpAppData_Path+"\\GameDevTools\\"
+    if os.path.exists(tmpPath)==False:
+        os.mkdir(tmpPath)
+    return tmpPath+"/"
+
+# 运行控制台程序，并获取输出
+def RunShellWithReturnCode(command,universal_newlines=True):
+    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, universal_newlines=universal_newlines)
+
+    output = p.stdout.read()
+    p.wait()
+    errout = p.stderr.read()
+
+    p.stdout.close()
+    p.stderr.close()
+    return output, p.returncode
