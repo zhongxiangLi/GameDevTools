@@ -8,6 +8,8 @@ import requests
 import time
 import subprocess
 import sys
+import win32con
+import win32clipboard as wincld
 
 # 不规范的Url 
 STR_INVALID_URL='url begin with http:// or https://'
@@ -377,3 +379,16 @@ def RunShellWithReturnCode(command,universal_newlines=True):
     p.stdout.close()
     p.stderr.close()
     return output, p.returncode
+
+def GetClipboard():
+    wincld.OpenClipboard()
+    text_result = wincld.GetClipboardData(win32con.CF_UNICODETEXT)
+    wincld.CloseClipboard()
+    return text_result
+
+
+def SetClipboard(varStr):
+    wincld.OpenClipboard()
+    wincld.EmptyClipboard()
+    wincld.SetClipboardData(win32con.CF_UNICODETEXT, varStr)
+    wincld.CloseClipboard()
