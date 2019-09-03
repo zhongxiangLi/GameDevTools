@@ -58,7 +58,6 @@ from Tools import FileZilla
 from Tools import Postman
 from Tools import ADBConsole
 from Tools import ConvertLuaDicsToList
-from Tools import LuaInPython
 from Tools import FBX_Review
 from Tools import Excel_to_lua
 from Tools import puttygen
@@ -75,6 +74,7 @@ from Tools import mysql_to_lua
 from Tools import GBK_to_UTF8
 from Tools import UpStr
 from Tools import LowerStr
+from Tools import TestLuaCode
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -225,9 +225,6 @@ toolSets=\
     # ConvertLuaDicsToList
     ConvertLuaDicsToList:[['ConvertLuaDicsToList'],u'转换Lua字典形式的数据表为数组形式数据表'],
 
-    # LuaInPython
-    LuaInPython:[['LuaInPython'],u'Python调用lua'],
-
     # FBX_Review 3d模型查看工具 Autodesk官方出品
     FBX_Review:[['FBX Review A cross-platform 3D model viewer,Open files in a variety of common 3D formats to help improve the speed of asset review: .zip, .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.'],u'3d模型查看工具 Autodesk官方出品'],
 
@@ -275,6 +272,9 @@ toolSets=\
 
     # LowerStr
     LowerStr:[['LowerStr Converts characters(words)(string) to lowercase'],u'转换英文字符为全小写'],
+
+    # TestLuaCode
+    TestLuaCode:[['TestLuaCode open ZeroBraneStudio(luaeditor) to test lua code copied from the web'],u'测试lua代码片段'],
 }
 
 toolSets_old=toolSets

@@ -50,3 +50,6 @@ python-3.7.4-embed-amd64/Tools/TextAnalysisTool.NET/*
 
 python-3.7.4-embed-amd64/Tools/advanced_ip_scanner/*
 !/python-3.7.4-embed-amd64/Tools/advanced_ip_scanner/advanced_ip_scanner.7z
+
+python-3.7.4-embed-amd64/Tools/ZeroBraneStudio/*
+!/python-3.7.4-embed-amd64/Tools/ZeroBraneStudio/ZeroBraneStudioEduPack-1.80-win32.7z

@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/9/4 TestLuaCode 测试lua代码片段 关键词 ['TestLuaCode open ZeroBraneStudio(luaeditor) to test lua code copied from the web']
+
 2019/9/2 UpStr 转换英文字符为全大写 关键词 ['UpStr Converts characters(words)(string) to uppercase']
 
 2019/9/2 LowerStr 转换英文字符为全小写 关键词 ['LowerStr Converts characters(words)(string) to lowercase']
