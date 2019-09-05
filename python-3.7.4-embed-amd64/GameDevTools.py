@@ -4,6 +4,7 @@ import os
 print(os.getcwd())
 os.chdir(os.getcwd())
 import sys
+import json
 from Tools import ProfilerTime
 
 ProfilerTime.BeginSample("import")
@@ -54,9 +55,7 @@ from Tools import Win32DiskImager
 from Tools import PhpStudy
 from Tools import CombineTxtToOneFile
 from Tools import ProfilerLuaMemory
-from Tools import FileZilla
 from Tools import Postman
-from Tools import ADBConsole
 from Tools import ConvertLuaDicsToList
 from Tools import FBX_Review
 from Tools import Excel_to_lua
@@ -69,12 +68,11 @@ from Tools import FilePathNotOnlyEnglish
 from Tools import TextAnalysisTool
 from Tools import GetMyIPLocation
 from Tools import GetIPLocation
-from Tools import advanced_ip_scanner
 from Tools import mysql_to_lua
 from Tools import GBK_to_UTF8
 from Tools import UpStr
 from Tools import LowerStr
-from Tools import TestLuaCode
+from Tools import toolset
 
 tmpInitCostTime=ProfilerTime.EndSample()
 
@@ -213,14 +211,8 @@ toolSets=\
     # ProfilerLuaMemory 获取一个lua 数据表所占用内存
     ProfilerLuaMemory:[['ProfilerLuaMemory',],u'获取一个lua 数据表所占用内存'],
 
-    # FileZilla FTP SFTP 文件上传下载工具
-    FileZilla:[['FileZilla® is a cross-platform FTP, SFTP, and FTPS client with a vast list of features, which supports Windows, Mac OS X, Linux, and more. ','download'],u'FTP SFTP 文件上传下载工具'],
-
     # Postman HTTP requests  Get Post Patch Delete Put Postman是google开发的一款功能强大的网页调试与发送网页HTTP请求工具
     Postman:[['Postman HTTP requests  Get Post Patch Delete Put',],u'google开发的一款功能强大的网页调试与发送网页HTTP请求工具'],
-
-    # ADBConsole
-    ADBConsole:[['ADBConsole logcat android ddms'],u'查看Android手机Log的工具，再也不用打开AndroidStudio了'],
 
     # ConvertLuaDicsToList
     ConvertLuaDicsToList:[['ConvertLuaDicsToList'],u'转换Lua字典形式的数据表为数组形式数据表'],
@@ -258,9 +250,6 @@ toolSets=\
     # GetIPLocation
     GetIPLocation:[['get ip address/domain gps location'],u'获取IP/域名所在地区位置'],
 
-    # advanced_ip_scanner
-    advanced_ip_scanner:[['advanced_ip_scanner scan lan ip,get port status and network card info'],u'扫描指定网段IP，获取开放端口、网卡信息'],
-
     # mysql_to_lua
     mysql_to_lua:[['mysql_to_lua'],u'导出Mysql表数据为lua脚本'],
 
@@ -272,14 +261,11 @@ toolSets=\
 
     # LowerStr
     LowerStr:[['LowerStr Converts characters(words)(string) to lowercase'],u'转换英文字符为全小写'],
-
-    # TestLuaCode
-    TestLuaCode:[['TestLuaCode open ZeroBraneStudio(luaeditor) to test lua code copied from the web'],u'测试lua代码片段'],
 }
 
 toolSets_old=toolSets
 toolSets={}
-# 反转
+# 反转,一个关键词 对应多个工具
 for tmpTool,tmpToolInfo in toolSets_old.items():
     for tmpOneKeyword in tmpToolInfo[0]:
         tmpOneKeyword=tmpOneKeyword.lower()#使用小写字母作为关键词检索
@@ -287,10 +273,8 @@ for tmpTool,tmpToolInfo in toolSets_old.items():
             toolSets[tmpOneKeyword]=[]
         toolSets[tmpOneKeyword].append(tmpTool)
 
-
-
 # print(toolSets)
-# print(toolSets[GetFileMD5])
+
 
 # 第一次进入Choose 提示按回车返回Search
 _Show_Choose_Tips=True
@@ -306,10 +290,6 @@ def searchKeyword(varKeyword):
         if varKeyword in tmpOneKeyword:
             tmpKeyword_ContainsSearch.append(tmpOneKeyword)
 
-    if len(tmpKeyword_ContainsSearch)==0:
-        print("not found")
-        return
-
     # 提取关键字对应的Tool,去重
     tmpTools_for_Search=[]
     for tmpOneKeyword in tmpKeyword_ContainsSearch:
@@ -318,12 +298,45 @@ def searchKeyword(varKeyword):
             if tmpTool not in tmpTools_for_Search:
                 tmpTools_for_Search.append(tmpTool)
 
+    # print(tmpTools_for_Search)
+
     # 输出结果
-    print('\n----------------------------------------')
-    for tmpIndex in range(len(tmpTools_for_Search)):
-        tmpOneTool=tmpTools_for_Search[tmpIndex]
-        print(str(tmpIndex)+":"+tmpOneTool.__name__+" -"+toolSets_old[tmpOneTool][1])
-    print('----------------------------------------\n')
+    if len(tmpTools_for_Search)>0:
+        print('\n----------------------------------------')
+        for tmpIndex in range(len(tmpTools_for_Search)):
+            tmpOneTool=tmpTools_for_Search[tmpIndex]
+            print(str(tmpIndex)+":"+tmpOneTool.__name__+" -"+toolSets_old[tmpOneTool][1])
+        print('----------------------------------------\n')
+
+    #从toolset.json中 搜索
+    tmpToolInfos_for_Search=[]
+    toolsetjsonPath=os.getcwd()+"/Tools/toolset.json"
+    toolsetjsonfile =open(toolsetjsonPath,encoding='utf-8') #打开json文件
+    res=toolsetjsonfile.read()  #读文件
+    toolsetArray=json.loads(res)
+    # print(toolsetArray)#把json串变成python的数据类型：字典
+    for tmpOneToolInfo in toolsetArray:
+        # print(tmpOneToolInfo)
+        tmpOneToolsInfo_KeywordArray=tmpOneToolInfo["keyword"]
+        # print(tmpOneToolsInfo_KeywordArray)
+        for tmpOneKeyword in tmpOneToolsInfo_KeywordArray:
+            # print(tmpOneKeyword)
+            if varKeyword in tmpOneKeyword.lower():
+                # print("keyword find")
+                tmpToolInfos_for_Search.append(tmpOneToolInfo)
+                break
+
+    if len(tmpToolInfos_for_Search)>0:
+        print('\n----------------------------------------')
+        for tmpIndex in range(len(tmpToolInfos_for_Search)):
+            tmpOneToolInfo=tmpToolInfos_for_Search[tmpIndex]
+            print(str(10+tmpIndex)+":"+tmpOneToolInfo["name"]+" -"+tmpOneToolInfo["desc"])
+        print('----------------------------------------\n')
+
+
+    if len(tmpTools_for_Search)==0 and len(tmpToolInfos_for_Search)==0:
+        print("not found\n")
+        return
 
     global _Show_Choose_Tips
     if _Show_Choose_Tips:
@@ -337,16 +350,25 @@ def searchKeyword(varKeyword):
         sayHello()
     else:
         tmpIndex=int(tmpIndexStr)
-        if tmpIndex>(len(tmpTools_for_Search)-1):
-            searchKeyword(varKeyword)
-            return
-        print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
+        if tmpIndex>=10:
+            tmpRealIndex=tmpIndex-10
+            if tmpRealIndex>(len(tmpToolInfos_for_Search)-1):
+                searchKeyword(varKeyword)
+                return
+            else:
+                tmpOneToolInfo=tmpToolInfos_for_Search[tmpRealIndex]
+                toolset.run(tmpOneToolInfo)
+        else:
+            if tmpIndex>(len(tmpTools_for_Search)-1):
+                searchKeyword(varKeyword)
+                return
+            print("-------"+tmpTools_for_Search[tmpIndex].__name__+"-------")
 
-        try:
-            tmpTools_for_Search[tmpIndex].run()
-        except:
-            print("Unexpected error:", sys.exc_info())
-            tmpTools_for_Search[tmpIndex].run()
+            try:
+                tmpTools_for_Search[tmpIndex].run()
+            except:
+                print("Unexpected error:", sys.exc_info())
+                tmpTools_for_Search[tmpIndex].run()
         return
         
             
