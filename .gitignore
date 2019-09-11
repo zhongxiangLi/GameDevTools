@@ -56,3 +56,6 @@ python-3.7.4-embed-amd64/Tools/ZeroBraneStudio/*
 
 python-3.7.4-embed-amd64/Tools/jsonviewer/*
 !/python-3.7.4-embed-amd64/Tools/jsonviewer/jsonviewer.7z
+
+python-3.7.4-embed-amd64/Tools/NeorProfileSQL/*
+!/python-3.7.4-embed-amd64/Tools/NeorProfileSQL/NeorProfileSQL.7z
