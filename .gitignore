@@ -59,3 +59,9 @@ python-3.7.4-embed-amd64/Tools/jsonviewer/*
 
 python-3.7.4-embed-amd64/Tools/NeorProfileSQL/*
 !/python-3.7.4-embed-amd64/Tools/NeorProfileSQL/NeorProfileSQL.7z
+
+python-3.7.4-embed-amd64/Tools/RedisStudio-en-0.1.5/*
+!/python-3.7.4-embed-amd64/Tools/RedisStudio-en-0.1.5/RedisStudio-en-0.1.5.7z
+
+python-3.7.4-embed-amd64/Tools/Redis-x64-3.0.504/*
+!/python-3.7.4-embed-amd64/Tools/Redis-x64-3.0.504/Redis-x64-3.0.504.7z

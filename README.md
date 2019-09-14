@@ -33,6 +33,10 @@ tips:
 # 更新日志
 
 ```
+2019/9/14 RedisStudio-en-0.1.5 Redis桌面客户端,提供轻量级 友好 高效的Redis管理 关键词 ['redis']
+
+2019/9/14 Redis-x64-3.0.504 Redis win版本，微软出品 关键词 ['redis']
+
 2019/9/11 NeorProfileSQL Mysql性能监测工具 关键词 ['mysql']
 
 2019/9/6 jsonviewer json格式化校验工具 关键词 ['jsonviewer is json format and error check tool with visual gui']

@@ -34,4 +34,16 @@
 	"keyword": ["Neor Profile SQL,profiler mysql querys with gui"],
 	"7zfile": "NeorProfileSQL/NeorProfileSQL.7z",
 	"exepath": "NeorProfileSQL/NeorProfileSQL/4.1.1/Start.bat"
+},{
+	"name": "RedisStudio-en-0.1.5",
+	"desc": "Redis桌面客户端,提供轻量级 友好 高效的Redis管理",
+	"keyword": ["RedisStudio,redis gui client"],
+	"7zfile": "RedisStudio-en-0.1.5/RedisStudio-en-0.1.5.7z",
+	"exepath": "RedisStudio-en-0.1.5/RedisStudio-en-0.1.5/Start.bat"
+},{
+	"name": "Redis-x64-3.0.504",
+	"desc": "Redis win版本，微软出品",
+	"keyword": ["redis windows,powerd by microsoft."],
+	"7zfile": "Redis-x64-3.0.504/Redis-x64-3.0.504.7z",
+	"exepath": "Redis-x64-3.0.504/Redis-x64-3.0.504/Start.bat"
 }]
