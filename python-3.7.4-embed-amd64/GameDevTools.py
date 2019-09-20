@@ -70,8 +70,8 @@ from Tools import GetMyIPLocation
 from Tools import GetIPLocation
 from Tools import mysql_to_lua
 from Tools import GBK_to_UTF8
-from Tools import UpStr
-from Tools import LowerStr
+# from Tools import UpStr
+# from Tools import LowerStr
 from Tools import toolset
 
 tmpInitCostTime=ProfilerTime.EndSample()
@@ -256,11 +256,11 @@ toolSets=\
     #GBK_to_UTF8
     GBK_to_UTF8:[['GBK_to_UTF8 convert(encode) from gbk encoding to utf8'],u'转换文本文件编码GBK-->UTF8'],
 
-    # UpStr
-    UpStr:[['UpStr Converts characters(words)(string) to uppercase'],u'转换英文字符为全大写'],
+    # # UpStr
+    # UpStr:[['UpStr Converts characters(words)(string) to uppercase'],u'转换英文字符为全大写'],
 
-    # LowerStr
-    LowerStr:[['LowerStr Converts characters(words)(string) to lowercase'],u'转换英文字符为全小写'],
+    # # LowerStr
+    # LowerStr:[['LowerStr Converts characters(words)(string) to lowercase'],u'转换英文字符为全小写'],
 }
 
 toolSets_old=toolSets

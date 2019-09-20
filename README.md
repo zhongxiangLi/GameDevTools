@@ -33,6 +33,8 @@ tips:
 # 更新日志
 
 ```
+2019/9/20 UpLowStr 英文大小写转换 关键词 ['UpLowStr Converts characters(words)(string) to uppercase(lowercase)']
+
 2019/9/14 RedisStudio-en-0.1.5 Redis桌面客户端,提供轻量级 友好 高效的Redis管理 关键词 ['redis']
 
 2019/9/14 Redis-x64-3.0.504 Redis win版本，微软出品 关键词 ['redis']
