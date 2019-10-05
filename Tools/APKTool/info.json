@@ -1,0 +1,7 @@
+{
+	"name": "APKTool",
+	"desc": "APK反编译工具套装",
+	"keyword": ["apktools","adb","jdgui","aapt"],
+	"7zfile": "APKTool/APKTool.7z",
+	"exepath": "APKTool/APKTool/Start.bat"
+}

@@ -1,0 +1,7 @@
+{
+	"name": "TextureMerger",
+	"desc": "打图集工具 提取自Egret",
+	"keyword": ["png","jpg","texturepacker","texturemerger"],
+	"7zfile": "TextureMerger/TextureMerger.7z",
+	"exepath": "TextureMerger/TextureMerger/Start.bat"
+}

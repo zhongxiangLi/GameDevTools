@@ -1,0 +1,7 @@
+{
+	"name": "RedisStudio-en-0.1.5",
+	"desc": "Redis桌面客户端,提供轻量级 友好 高效的Redis管理",
+	"keyword": ["RedisStudio,redis gui client"],
+	"7zfile": "RedisStudio-en-0.1.5/RedisStudio-en-0.1.5.7z",
+	"exepath": "RedisStudio-en-0.1.5/RedisStudio-en-0.1.5/Start.bat"
+}

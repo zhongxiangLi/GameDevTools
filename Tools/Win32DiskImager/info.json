@@ -1,0 +1,7 @@
+{
+	"name": "Win32DiskImager",
+	"desc": "写入ISO系统到U盘 树莓派安装系统",
+	"keyword": ["win32diskimager","iso","shumeipai","raspberrypi","raspberry pi"],
+	"7zfile": "Win32DiskImager/Win32DiskImager.7z",
+	"exepath": "Win32DiskImager/Win32DiskImager/Start.bat"
+}

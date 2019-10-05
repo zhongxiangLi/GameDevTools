@@ -1,0 +1,7 @@
+{
+	"name": "UnityAssetStudio",
+	"desc": "Unity 资源导出工具",
+	"keyword": ["unityassetstudiogui","unitystudio","unityassetbundleexport"],
+	"7zfile": "AssetStudio/AssetStudio.x64.v0.12.49.7z",
+	"exepath": "AssetStudio/AssetStudio.x64.v0.12.49/Start.bat"
+}

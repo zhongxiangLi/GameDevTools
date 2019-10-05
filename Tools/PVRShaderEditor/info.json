@@ -1,0 +1,7 @@
+{
+	"name": "PVRShaderEditor",
+	"desc": "Shader代码编辑器，具有错误检查、代码高亮功能",
+	"keyword": ["PVRShaderEditor is shader code editor,support code highlight,error check"],
+	"7zfile": "PVRShaderEditor/PVRShaderEditor.7z",
+	"exepath": "PVRShaderEditor/PVRShaderEditor/Start.bat"
+}

@@ -1,0 +1,7 @@
+{
+	"name": "Shadowsocks",
+	"desc": "代理 翻墙 VPN",
+	"keyword": ["shadowsocks","vpn","fanqiang","daili","proxy"],
+	"7zfile": "Shadowsocks/Shadowsocks.7z",
+	"exepath": "Shadowsocks/Shadowsocks/Start.bat"
+}
