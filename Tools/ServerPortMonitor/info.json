@@ -1,0 +1,7 @@
+{
+	"name": "ServerPortMonitor",
+	"desc": "监控服务器端口",
+	"keyword": ["ServerPortMonitor check server port is open"],
+	"7zfile": "ServerPortMonitor/ServerPortMonitor.7z",
+	"exepath": "ServerPortMonitor/ServerPortMonitor/Start.bat"
+}

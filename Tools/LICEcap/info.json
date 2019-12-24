@@ -1,0 +1,7 @@
+{
+	"name": "LICEcap",
+	"desc": "屏幕录制Gif",
+	"keyword": ["gif","screen","capture","rec","url","licecap","cap"],
+	"7zfile": "LICEcap/LICEcap.7z",
+	"exepath": "LICEcap/LICEcap/Start.bat"
+}

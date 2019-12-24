@@ -1,0 +1,7 @@
+{
+	"name": "Everything",
+	"desc": "极速搜索电脑文件",
+	"keyword": ["everything","find","search","file","dir","sousuo"],
+	"7zfile": "Everything/Everything-1.4.1.935.x64.7z",
+	"exepath": "Everything/Everything-1.4.1.935.x64/Start.bat"
+}

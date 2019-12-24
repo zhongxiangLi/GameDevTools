@@ -1,0 +1,7 @@
+{
+	"name": "UpLowStr",
+	"desc": "英文大小写转换",
+	"keyword": ["UpLowStr Converts characters(words)(string) to uppercase(lowercase)"],
+	"7zfile": "UpLowStr/UpLowStr.7z",
+	"exepath": "UpLowStr/UpLowStr/Start.bat"
+}

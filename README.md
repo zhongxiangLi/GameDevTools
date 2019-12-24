@@ -1,147 +1,68 @@
-![](https://repository-images.githubusercontent.com/177628884/334b1080-8f94-11e9-9d0e-9b5d292bee8d)
-
 # GameDevTools
-æ¸¸æˆå¼€å‘æ—¥å¸¸ç”¨åˆ°çš„å·¥å…·é›†
+ÓÎÏ·¿ª·¢ÈÕ³£ÓÃµ½µÄ¹¤¾ß¼¯
 
-å°†GameDevTools.bat åˆ›å»ºå¿«æ·æ–¹å¼ æ”¾åˆ°æ¡Œé¢å°±å¯ä»¥å¿«é€Ÿæ‰“å¼€
+![Image text](http://gitlab.shouyougu.com/Captain/GameDevTools/raw/master/screenshoot.png)
 
-ç½‘ç»œæ…¢çš„å¯ä»¥å°è¯•ä¸‹è½½Releaseç‰ˆæœ¬
-
-https://github.com/ThisisGame/GameDevTools/releases
-
-# æœç´¢å·¥å…·
-
-æ¯”å¦‚æˆ‘æƒ³æŸ¥æ‰¾æ‰“å›¾é›†å·¥å…·ï¼Œå…³é”®è¯ texturepackerã€‚
-é‚£ä¹ˆè¾“å…¥ texture æˆ–è€… pack æˆ–è€… tex ï¼Œåªè¦è¾“å…¥å…³é”®è¯éƒ¨åˆ†å­—æ¯ å³å¯æŸ¥æ‰¾ã€‚
-
-è¾“å…¥å·¥å…·åºå·ï¼Œå³å¯ä½¿ç”¨å·¥å…·
-
-tips:
-åœ¨ search ç•Œé¢ï¼Œè¾“å…¥ : å†è¾“å…¥ç³»ç»Ÿå‘½ä»¤ï¼Œå¯ä»¥ç›´æ¥æ‰§è¡Œç³»ç»Ÿå‘½ä»¤ã€‚
-
-ä¾‹å¦‚:
-åœ¨search ç•Œé¢è¾“å…¥
+# ¸üĞÂÈÕÖ¾
 
 ```
-:ping www.baidu.com
-```
+2019/10/20 treeNMS redis¹ÜÀíºóÌ¨,¿ÉÔÚÄÚÍâÍø²¿Êğ ¹Ø¼ü´Ê ['redis']
 
-å³å¯æ‰§è¡Œ ping ç™¾åº¦çš„å‘½ä»¤ã€‚
+2019/9/20 UpLowStr Ó¢ÎÄ´óĞ¡Ğ´×ª»» ¹Ø¼ü´Ê ['UpLowStr Converts characters(words)(string) to uppercase(lowercase)']
 
+2019/9/14 RedisStudio-en-0.1.5 Redis×ÀÃæ¿Í»§¶Ë,Ìá¹©ÇáÁ¿¼¶ ÓÑºÃ ¸ßĞ§µÄRedis¹ÜÀí ¹Ø¼ü´Ê ['redis']
 
+2019/9/14 Redis-x64-3.0.504 Redis win°æ±¾£¬Î¢Èí³öÆ· ¹Ø¼ü´Ê ['redis']
 
-# æ›´æ–°æ—¥å¿—
+2019/9/11 NeorProfileSQL MysqlĞÔÄÜ¼à²â¹¤¾ß ¹Ø¼ü´Ê ['mysql']
 
-```
-2019/9/20 UpLowStr è‹±æ–‡å¤§å°å†™è½¬æ¢ å…³é”®è¯ ['UpLowStr Converts characters(words)(string) to uppercase(lowercase)']
+2019/9/6 jsonviewer json¸ñÊ½»¯Ğ£Ñé¹¤¾ß ¹Ø¼ü´Ê ['jsonviewer is json format and error check tool with visual gui']
 
-2019/9/14 RedisStudio-en-0.1.5 Redisæ¡Œé¢å®¢æˆ·ç«¯,æä¾›è½»é‡çº§ å‹å¥½ é«˜æ•ˆçš„Redisç®¡ç† å…³é”®è¯ ['redis']
+2019/9/4 TestLuaCode ²âÊÔlua´úÂëÆ¬¶Î ¹Ø¼ü´Ê ['TestLuaCode open ZeroBraneStudio(luaeditor) to test lua code copied from the web']
 
-2019/9/14 Redis-x64-3.0.504 Redis winç‰ˆæœ¬ï¼Œå¾®è½¯å‡ºå“ å…³é”®è¯ ['redis']
+2019/9/2 UpStr ×ª»»Ó¢ÎÄ×Ö·ûÎªÈ«´óĞ´ ¹Ø¼ü´Ê ['UpStr Converts characters(words)(string) to uppercase']
 
-2019/9/11 NeorProfileSQL Mysqlæ€§èƒ½ç›‘æµ‹å·¥å…· å…³é”®è¯ ['mysql']
+2019/9/2 LowerStr ×ª»»Ó¢ÎÄ×Ö·ûÎªÈ«Ğ¡Ğ´ ¹Ø¼ü´Ê ['LowerStr Converts characters(words)(string) to lowercase']
 
-2019/9/6 jsonviewer jsonæ ¼å¼åŒ–æ ¡éªŒå·¥å…· å…³é”®è¯ ['jsonviewer is json format and error check tool with visual gui']
+2019/7/24 advanced_ip_scanner É¨ÃèÖ¸¶¨Íø¶ÎIP£¬»ñÈ¡¿ª·Å¶Ë¿Ú¡¢Íø¿¨ĞÅÏ¢ ¹Ø¼ü´Ê ['advanced_ip_scanner scan lan ip,get port status and network card info']
 
-2019/9/4 TestLuaCode æµ‹è¯•luaä»£ç ç‰‡æ®µ å…³é”®è¯ ['TestLuaCode open ZeroBraneStudio(luaeditor) to test lua code copied from the web']
+2019/7/12 TextAnalysisTool ¿´logÉñÆ÷£¬¸ù¾İÖ¸¶¨ÄÚÈİ¹ıÂË ¹Ø¼ü´Ê ['TextAnalysisTool.NET','android logcat search by tag']
 
-2019/9/2 UpStr è½¬æ¢è‹±æ–‡å­—ç¬¦ä¸ºå…¨å¤§å†™ å…³é”®è¯ ['UpStr Converts characters(words)(string) to uppercase']
+2019/7/11 PVRShaderEditor Shader´úÂë±à¼­Æ÷£¬¾ßÓĞ´íÎó¼ì²é¡¢´úÂë¸ßÁÁ¹¦ÄÜ ¹Ø¼ü´Ê ['PVRShaderEditor is shader code editor,support code highlight,error check']
 
-2019/9/2 LowerStr è½¬æ¢è‹±æ–‡å­—ç¬¦ä¸ºå…¨å°å†™ å…³é”®è¯ ['LowerStr Converts characters(words)(string) to lowercase']
+2019/7/11 PVRTexTool ÌùÍ¼Ñ¹Ëõ¹¤¾ß£¬PNGÑ¹Ëõ³ÉETC¡¢PVRµÈ¸ñÊ½ ¹Ø¼ü´Ê ['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)']
 
-2019/8/21 GBK_to_UTF8 è½¬æ¢æ–‡æœ¬æ–‡ä»¶ç¼–ç GBK-->UTF8 å…³é”®è¯ ['GBK_to_UTF8 convert(encode) from gbk encoding to utf8']
+2019/7/8 FBX_Review 3dÄ£ĞÍ²é¿´¹¤¾ß Autodesk¹Ù·½³öÆ· ¹Ø¼ü´Ê ['FBX Review  3D model viewer,support .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.']
 
-2019/7/31 mysql_to_lua å¯¼å‡ºMysqlè¡¨æ•°æ®ä¸ºluaè„šæœ¬ å…³é”®è¯ ['mysql_to_lua']
+2019/7/5 ADBConsole ²é¿´AndroidÊÖ»úLogµÄ¹¤¾ß£¬ÔÙÒ²²»ÓÃ´ò¿ªAndroidStudioÁË ¹Ø¼ü´Ê ['ADBConsole logcat android ddms']
 
-2019/7/24 advanced_ip_scanner æ‰«ææŒ‡å®šç½‘æ®µIPï¼Œè·å–å¼€æ”¾ç«¯å£ã€ç½‘å¡ä¿¡æ¯ å…³é”®è¯ ['advanced_ip_scanner scan lan ip,get port status and network card info']
+2019/6/26 Postman PostmanÊÇgoogle¿ª·¢µÄÒ»¿î¹¦ÄÜÇ¿´óµÄÍøÒ³µ÷ÊÔÓë·¢ËÍÍøÒ³HTTPÇëÇó¹¤¾ß ¹Ø¼ü´Ê ['Postman HTTP requests  Get Post Patch Delete Put']
 
-2019/7/17 GetIPLocation è·å–IPæ‰€åœ¨åœ°åŒºä½ç½® å…³é”®è¯ ['get ip address  gps location']
+2019/6/23 FileZilla FTP SFTP ÎÄ¼şÉÏ´«ÏÂÔØ¹¤¾ß ¹Ø¼ü´Ê ['FileZilla FTP SFTP download']
 
-2019/7/17 GetMyIPLocation è·å–è‡ªå·±çš„å¤–ç½‘IPä»¥åŠå®šä½ å…³é”®è¯ ['get my compute ip address and gps location']
+2019/6/21 LuaMemoryProfiler »ñÈ¡Ò»¸ölua Êı¾İ±íËùÕ¼ÓÃÄÚ´æ ¹Ø¼ü´Ê ['lua']
 
-2019/7/12 TextAnalysisTool çœ‹logç¥å™¨ï¼Œæ ¹æ®æŒ‡å®šå†…å®¹è¿‡æ»¤ å…³é”®è¯ ['TextAnalysisTool.NET','android logcat search by tag']
+2019/6/15 phpStudy 2016°æ  ¼¯³É×îĞÂµÄApache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader ¹ÙÍø http://phpstudy.php.cn/wenda/407.html
 
-2019/7/11 FilePathNotOnlyEnglish æ£€æµ‹æ–‡ä»¶åæˆ–è·¯å¾„æ˜¯å¦åŒ…å«ä¸­æ–‡æˆ–å…¶ä»–éè‹±æ–‡å­—ç¬¦ å…³é”®è¯ ['FilePathNotOnlyEnglish check chinese filename or other not english language character']
+2019/6/3 Win32DiskImager Ğ´ÈëISOÏµÍ³µ½UÅÌ Ê÷İ®ÅÉ°²×°ÏµÍ³ ,¹Ø¼ü´Ê ['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi']
 
-2019/7/11 PVRShaderEditor Shaderä»£ç ç¼–è¾‘å™¨ï¼Œå…·æœ‰é”™è¯¯æ£€æŸ¥ã€ä»£ç é«˜äº®åŠŸèƒ½ å…³é”®è¯ ['PVRShaderEditor is shader code editor,support code highlight,error check']
+2019/5/28 Shadowsocks ´úÀí ·­Ç½ VPN ,¹Ø¼ü´Ê ['shadowsocks','vpn','fanqiang','daili','proxy']
 
-2019/7/11 PVRTexTool è´´å›¾å‹ç¼©å·¥å…·ï¼ŒPNGå‹ç¼©æˆETCã€PVRç­‰æ ¼å¼ å…³é”®è¯ ['PVRTexTool convert(encode/compress) images textures(png/jpg) to gpu texture format like pvr(etc/ast)']
+2019/5/28 Everything ¼«ËÙËÑË÷µçÄÔÎÄ¼ş ,¹Ø¼ü´Ê ['Everything','find','search','file','dir','sousuo']
 
-2019/7/10 QRcodeGen ç”ŸæˆäºŒç»´ç å›¾ç‰‡ å…³é”®è¯ ['QRcodeGen','erweima']
+2019/4/30 APKTools APK·´±àÒë¹¤¾ßÌ××° ,¹Ø¼ü´Ê ['apktools','adb','jdjui','aapt']
 
-2019/7/10 ChangeFileExt æ‰¹é‡ä¿®æ”¹æ–‡ä»¶åç¼€ï¼Œä¾‹å¦‚JPGæ”¹jpg å…³é”®è¯ ['ChangeFileExt','changefiletypeextension']
+2019/4/11 UnityAssetStudio Unity ×ÊÔ´µ¼³ö¹¤¾ß,¹Ø¼ü´Ê ['unityassetstudiogui','unitystudio','unityassetbundleexport']
 
-2019/7/10 puttygen ç”ŸæˆRSAã€DSAå…¬é’¥ç§é’¥çš„å¯†é’¥å·¥å…· å…³é”®è¯ ['puttygen is a RSA and DSA key generation utility']
+2019/4/7 putty Ô¶³ÌLinux,¹Ø¼ü´Ê ['putty','ssh']
 
-2019/7/9 Excel_to_lua Excelè½¬luaå·¥å…· å…³é”®è¯ ['Excel_to_lua']
+2019/4/7 SqliteStudio 2.1.5 sqlite3¹ÜÀíÈí¼ş,¹Ø¼ü´Ê ['sqlitestudio_2_1_5','db','sqlite3']
 
-2019/7/8 FBX_Review 3dæ¨¡å‹æŸ¥çœ‹å·¥å…· Autodeskå®˜æ–¹å‡ºå“ å…³é”®è¯ ['FBX Review  3D model viewer,support .abc* .fbx, .3ds, .obj, .dxf, .dae, .bvh, .htr, .trc, .asf, .amc, .c3d, .aoa, .mcd.']
+2019/4/6 ĞÂÔöWinMerge ¶Ô±È´úÂë¹¤¾ß£¬Ò²¿ÉÒÔ¶Ô±ÈÎÄ¼ş¼Ğ ÎÄ¼ş£¬Ìæ´úbeyond compare,¹Ø¼ü´Ê ['diff','beyond compare','winmerge']
 
-2019/7/5 ADBConsole æŸ¥çœ‹Androidæ‰‹æœºLogçš„å·¥å…·ï¼Œå†ä¹Ÿä¸ç”¨æ‰“å¼€AndroidStudioäº† å…³é”®è¯ ['ADBConsole logcat android ddms']
+2019/4/6 ĞÂÔöTextureMerger ´òÍ¼¼¯¹¤¾ß ÌáÈ¡×ÔEgret,¹Ø¼ü´Ê ['png','jpg','texturepacker','texturemerger']
 
-2019/6/26 Postman Postmanæ˜¯googleå¼€å‘çš„ä¸€æ¬¾åŠŸèƒ½å¼ºå¤§çš„ç½‘é¡µè°ƒè¯•ä¸å‘é€ç½‘é¡µHTTPè¯·æ±‚å·¥å…· å…³é”®è¯ ['Postman HTTP requests  Get Post Patch Delete Put']
+2019/4/6 ĞÂÔöPNGÎŞËğÑ¹Ëõ¹¤¾ß PNGoo_Win,¹Ø¼ü´Ê ['png','compress','png compress','image','image compress','yasuo']
 
-2019/6/23 FileZilla FTP SFTP æ–‡ä»¶ä¸Šä¼ ä¸‹è½½å·¥å…· å…³é”®è¯ ['FileZilla FTP SFTP download']
-
-2019/6/21 ProfilerLuaMemory è·å–ä¸€ä¸ªlua æ•°æ®è¡¨æ‰€å ç”¨å†…å­˜ å…³é”®è¯ ['ProfilerLuaMemory']
-
-2019/6/21 CombineTxtToOneFile åˆå¹¶æ–‡æœ¬åˆ°ä¸€ä¸ªæ–‡ä»¶ å…³é”®è¯ ['CombineTxtToOneFile']
-
-2019/6/15 phpStudy 2016ç‰ˆ  é›†æˆæœ€æ–°çš„Apache+Nginx+LightTPD+PHP+MySQL+phpMyAdmin+Zend Optimizer+Zend Loader å®˜ç½‘ http://phpstudy.php.cn/wenda/407.html
-
-2019/6/3 Win32DiskImager å†™å…¥ISOç³»ç»Ÿåˆ°Uç›˜ æ ‘è“æ´¾å®‰è£…ç³»ç»Ÿ ,å…³é”®è¯ ['win32diskimager','iso','shumeipai','raspberrypi','raspberry pi']
-
-2019/6/3 Archive7z 7z lzmaå‹ç¼© ,å…³é”®è¯ ['7z','zip','rar','lzma','yasuo']
-
-2019/6/3 Ex7z 7z lzmaè§£å‹ ,å…³é”®è¯ ['7z','zip','rar','lzma','jieyasuo']
-
-2019/5/28 Shadowsocks ä»£ç† ç¿»å¢™ VPN ,å…³é”®è¯ ['shadowsocks','vpn','fanqiang','daili','proxy']
-
-2019/5/28 Everything æé€Ÿæœç´¢ç”µè„‘æ–‡ä»¶ ,å…³é”®è¯ ['Everything','find','search','file','dir','sousuo']
-
-2019/5/17 HarExport H5ç½‘é¡µæ¸¸æˆèµ„æºæå– ,å…³é”®è¯ ['harexport','h5','html','web']
-
-2019/4/30 APKTools APKåç¼–è¯‘å·¥å…·å¥—è£… ,å…³é”®è¯ ['apktools','adb','jdjui','aapt']
-
-2019/4/24 MergeVideo è§†é¢‘åˆå¹¶å·¥å…· ,å…³é”®è¯ ['mergevideo','combine','add','mp4','flv','wmv','mkv']
-
-2019/4/24 Audio_HZ_KBPS_Tools éŸ³æ•ˆæ ¼å¼è½¬æ¢å·¥å…· è®¾ç½®hz æ¯”ç‰¹ç‡ ,å…³é”®è¯ ['audio_hz_kbps_bits','mp3','ogg','wav']
-
-2019/4/24 ImageScale å›¾ç‰‡ç¼©æ”¾ æŒ‡å®šæ¯”ä¾‹,å…³é”®è¯ ['imagerescale','png','jpg','resize']
-
-2019/4/24 ImageResize å›¾ç‰‡ç¼©æ”¾ æŒ‡å®šå°ºå¯¸,å…³é”®è¯ ['imageresize','png','jpg']
-
-2019/4/19 to_JPG å›¾ç‰‡è½¬JPGå·¥å…· æ”¯æŒå•æ–‡ä»¶ä¸æ–‡ä»¶å¤¹,å…³é”®è¯ ['image conv','webp','bmp','jpg','png']
-
-2019/4/11 UnityAssetStudio Unity èµ„æºå¯¼å‡ºå·¥å…·,å…³é”®è¯ ['unityassetstudiogui','unitystudio','unityassetbundleexport']
-
-2019/4/8 GetStrSHA1 sha1ç¼–ç ,å…³é”®è¯ ['sha1hash']
-
-2019/4/8 GetStrBASE64 Base64ç¼–ç ,å…³é”®è¯ ['base64encode']
-
-2019/4/8 BASE64_Decode Base64è§£ç ,å…³é”®è¯ ['base64decode']
-
-2019/4/7 putty è¿œç¨‹Linux,å…³é”®è¯ ['putty','ssh']
-
-2019/4/7 SqliteStudio 2.1.5 sqlite3ç®¡ç†è½¯ä»¶,å…³é”®è¯ ['sqlitestudio_2_1_5','db','sqlite3']
-
-2019/4/6 https://www.freesoundeffects.com/ å…è´¹éŸ³æ•ˆä¸‹è½½ç½‘ç«™,å…³é”®è¯ ['visitfreesoundeffect','mp3','audio','wav','audio']
-
-2019/4/6 æ–°å¢SimpleDownload å•æ–‡ä»¶ä¸‹è½½å™¨ï¼Œçœçš„æ‰“å¼€è¿…é›·æˆ–è€…æµè§ˆå™¨,å…³é”®è¯ ['http download','xunlei','xuanfeng','kuaiche','idm']
-
-2019/4/6 æ–°å¢GIMP å…è´¹å¼€æºçš„å›¾ç‰‡ç¼–è¾‘å·¥å…·ï¼Œæ›¿ä»£Photoshop,å…³é”®è¯ ['gimp','png','image editor','jpg','photoshop','texture','ps']
-
-2019/4/6 æ–°å¢WinMerge å¯¹æ¯”ä»£ç å·¥å…·ï¼Œä¹Ÿå¯ä»¥å¯¹æ¯”æ–‡ä»¶å¤¹ æ–‡ä»¶ï¼Œæ›¿ä»£beyond compare,å…³é”®è¯ ['diff','beyond compare','winmerge']
-
-2019/4/6 æ–°å¢TextureMerger æ‰“å›¾é›†å·¥å…· æå–è‡ªEgret,å…³é”®è¯ ['png','jpg','texturepacker','texturemerger']
-
-2019/4/6 æ–°å¢luac,å…³é”®è¯ ['luac','lua']
-
-2019/4/6 æ–°å¢lua,å…³é”®è¯ ['lua','LUA']
-
-2019/4/6 æ–°å¢PNGæ— æŸå‹ç¼©å·¥å…· PNGoo_Win,å…³é”®è¯ ['png','compress','png compress','image','image compress','yasuo']
-
-2019/4/4 æ–°å¢æ–‡æœ¬ç¼–è¾‘å™¨ Notepad,å…³é”®è¯ ['txt','exe','edit','note','notepad','text']
-
-2019/4/3 æ–°å¢å±å¹•å½•åˆ¶gifå·¥å…· ILCEcap,å…³é”®è¯ ['gif','screen','capture','rec','url','licecap','cap']
+2019/4/3 ĞÂÔöÆÁÄ»Â¼ÖÆgif¹¤¾ß ILCEcap,¹Ø¼ü´Ê ['gif','screen','capture','rec','url','licecap','cap']
 ```

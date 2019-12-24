@@ -1,0 +1,7 @@
+{
+	"name": "GetStrMD5",
+	"desc": "获取字符串MD5",
+	"keyword": ["get str md5"],
+	"7zfile": "GetStrMD5/GetStrMD5.7z",
+	"exepath": "GetStrMD5/GetStrMD5/Start.bat"
+}

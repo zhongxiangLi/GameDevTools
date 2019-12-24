@@ -1,0 +1,7 @@
+{
+	"name": "WinSCP",
+	"desc": "远程linux文件管理",
+	"keyword": ["linux","file","winscp","sftp","ftp","ssh"],
+	"7zfile": "WinSCP/WinSCP.7z",
+	"exepath": "WinSCP/WinSCP/Start.bat"
+}

@@ -1,5 +1,0 @@
-½âÑ¹1\Win32DiskImager.7z µ½ 1\WinÄ¿Â¼
-D:\Downloads\7z1900-extra>7za.exe x 1\Win32DiskImager.7z -o1\Win
-
-Ñ¹Ëõ
-D:\Downloads\7z1900-extra>7za.exe a -t7z newpack.7z Win32DiskImager\* -r -mx=9 -m0=LZMA2 -ms=10m -mf=on -mhc=on -mmt=on

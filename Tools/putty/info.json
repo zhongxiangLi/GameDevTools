@@ -1,0 +1,7 @@
+{
+	"name": "putty",
+	"desc": "远程Linux",
+	"keyword": ["putty","ssh"],
+	"7zfile": "putty/putty.7z",
+	"exepath": "putty/putty/Start.bat"
+}
